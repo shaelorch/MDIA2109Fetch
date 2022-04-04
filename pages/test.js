@@ -1,4 +1,5 @@
 import Input from '../comps/Input';
+import Error from '../comps/Error';
 
 export default function test(){
   return <div>
@@ -15,5 +16,10 @@ export default function test(){
       inputtype='number'
       bg='pink'
     />
+
+    <Error
+        errortxt='message'
+        bg='pink'
+        />
   </div>
 }
