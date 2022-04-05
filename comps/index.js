@@ -1,10 +1,7 @@
-import Title from '../comps/Title';
+import Progress from '../comps/Progressbar';
 
-export default function Title(){
+export default function Progress(){
     return <div>
-    Title
-    <Title 
-        titletxt=''
-    />
+    <ProgCont />
     </div>
 }

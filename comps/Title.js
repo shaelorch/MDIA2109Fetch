@@ -8,7 +8,9 @@ align-text:center;
 background:${props=>props.background};
 `
 //use a variable for your style use ${props=>props.background};
-
+export const bar = [
+    "/1stpage.svg"
+]
 
 export default function Title({
     titletxt='Form',
