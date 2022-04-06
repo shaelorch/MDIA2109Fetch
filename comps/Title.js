@@ -17,7 +17,7 @@ export default function Title({
     bg='#FFF'
 }){
     return 
-    <FormTitle>{titletxt}</FormTitle>
+    <FormTitle>{titletxt}</FormTitle>,
     <FormTitle background={bg} />
     //know which tags have closing brackets
     
