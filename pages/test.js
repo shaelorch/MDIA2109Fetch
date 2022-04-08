@@ -1,5 +1,7 @@
 import Input from '../comps/Input';
 import Error from '../comps/Error';
+import Header from '../comps/Header';
+
 
 export default function test(){
   return <div>
@@ -21,5 +23,10 @@ export default function test(){
         errortxt='message'
         bg='pink'
         />
+
+    <Header
+        headertext='header'
+        size='48px'
+    />
   </div>
 }
