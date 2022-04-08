@@ -1,5 +1,6 @@
 import Header from '../comps/Header';
 import Hamburger from '../comps/Hamburger';
+import Menu from '../comps/Menu';
 
 
 export default function test(){
@@ -11,5 +12,9 @@ export default function test(){
         size='48px'
     />
     <Hamburger />
+
+    <Menu 
+    labeltext='menu'
+    />
   </div>
 }
