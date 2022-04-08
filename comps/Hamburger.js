@@ -5,7 +5,7 @@ display:flex;
 `
 const HamburgerIcon = styled.div`
 width: 32px;
-height: 27px;
+height: 28px;
 `
 
 
