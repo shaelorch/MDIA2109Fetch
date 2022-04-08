@@ -1,5 +1,3 @@
-import Input from '../comps/Input';
-import Error from '../comps/Error';
 import Header from '../comps/Header';
 import Hamburger from '../comps/Hamburger';
 
