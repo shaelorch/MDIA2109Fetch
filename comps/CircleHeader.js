@@ -18,7 +18,7 @@ color: #EBB2AD;
 left:20px;
 `
 
-export default function Input({
+export default function CircleHeader({
   labeltxt='#',
 }){
 
