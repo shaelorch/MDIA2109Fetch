@@ -7,6 +7,7 @@ export default function test(){
         <h1>Test</h1>
         <Button 
         labeltxt='Yes'
+        ts='none'
         />
         <Button 
         labeltxt='Find A Pup'
@@ -19,6 +20,7 @@ export default function test(){
         bg='#EBB2AD'
         color='white'
         border='none'
+        ts='none'
         />
        <CirButton />
        <Logo />

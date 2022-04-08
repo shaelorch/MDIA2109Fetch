@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 const LogoCont = styled.div `
-background-image: url("../public/fetch_logo.svg");
-background-size: 100px;
-width: 100px;
-height: 100px;
+display: flex;
+padding: 25px;
 `
 export default function Logo ({
-
+    imgtype='/fetch_logo.svg'
 }){
-    return <LogoCont>
-
+    return (
+    <LogoCont>
+        <img height={50} src={imgtype}/>
     </LogoCont>
+    )
 }
