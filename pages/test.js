@@ -8,7 +8,8 @@ export default function test(){
         />
         <Button 
         labeltxt='mambojambo'
-        bg='yellow'
+        bg='#D6EEC9'
+        cl='#7EA172'
         />
     </div>
 }
