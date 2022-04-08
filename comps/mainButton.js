@@ -12,6 +12,8 @@ height: 35px;
 border: ${props=>props.border};
 border-radius:15px;
 margin: 10px;
+font-family: 'Passion One', cursive;
+font-size: 24px;
 `
 
 export default function mainButton({
