@@ -1,20 +1,21 @@
-import Header from '../comps/Header';
-import Hamburger from '../comps/Hamburger';
-import Menu from '../comps/Menu';
+import Progress from '../comps/Progressbar';
+
+import Help from '../comps/Helpcard';
 
 
 export default function test(){
-  return <div>
-    <h1>Test</h1>
-  
-    <Header
-        headertext='header'
-        size='48px'
-    />
-    <Hamburger />
+    return <div>
 
-    <Menu 
-    labeltext='menu'
-    />
-  </div>
+        <Progress  />
+        <Progress imgtype='2ndpage.svg' />
+        <Progress imgtype='3rdpage.svg' />
+        <Progress imgtype='4thpage.svg' />
+
+        <Help />
+        
+    </div>
+       
 }
+
+
+
