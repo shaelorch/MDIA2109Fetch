@@ -9,7 +9,7 @@ padding: 4px;
 background: #F8D2CF;
 color: #EBB2AD;
 text-align: center;
-
+-webkit-text-stroke: 4px #FFF;
 font: 72px 'Passion One', cursive;
 `
 
