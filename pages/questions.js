@@ -11,6 +11,7 @@ import Progress from '../comps/Progressbar';
 export default function test(){
   return <div>
     <Logo /> 
+    <Hamburger />
     <Progress />
     <Header
        headertext='1. Occupation'
