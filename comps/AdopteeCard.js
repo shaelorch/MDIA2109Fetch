@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import Paragraph from './Paragraph.js';
 
 const AdopteeCont = styled.div`
-display:grid;
-background-color: #FFF;
+padding: 7px;
+background-color: #EEE;
 border-radius: 30px;
 width: 360px;
 height: 180px;
@@ -38,6 +38,6 @@ export default function AdopteeCard({
        <CardImg src={image}/>
     <NameCont>{headertxt}</NameCont>
     </HeaderCont>
-    <Paragraph fontsize='18px' labeltxt='Write a blurb about the dog here...' />
+    <Paragraph size='18px' labeltxt='Write a blurb about the dog here...' />
   </AdopteeCont>
 }
