@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const ParaCont = styled.div`
 display:flex;
 justify-content: center;
-
+margin-right:100px;
+margin-left:100px;
+text-align:center;
 
 `
 const PText = styled.div`
