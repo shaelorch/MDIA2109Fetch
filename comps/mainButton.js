@@ -11,7 +11,7 @@ color: ${props=>props.color};
 width: 150px;
 height: 45px;
 border: ${props=>props.border};
-border-radius:15px;
+border-radius:20px;
 margin: 10px;
 font-family: 'Passion One', cursive;
 font-size: 30px;
