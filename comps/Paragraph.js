@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const ParaCont = styled.div`
 display:flex;
-margin: 5px;
+
+
 `
 const PText = styled.div`
 font-size: ${props=>props.fontsize};

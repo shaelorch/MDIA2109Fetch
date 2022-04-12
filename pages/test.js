@@ -1,17 +1,20 @@
-import Progress from '../comps/Progressbar';
 
-import Help from '../comps/Helpcard';
+import Logo from '../comps/Logo';
+import Paragraph from '../comps/Paragraph';
+
+import Header from '../comps/Header';
+
+
 
 
 export default function test(){
     return <div>
 
-        <Progress  />
-        <Progress imgtype='2ndpage.svg' />
-        <Progress imgtype='3rdpage.svg' />
-        <Progress imgtype='4thpage.svg' />
+       <Header headertext='WELCOME TO'/>
+       <Logo />
 
-        <Help />
+       <Paragraph labeltxt='Fetch is a web app that connects you with your perfect dog from a rescue center!' />
+       
         
     </div>
        

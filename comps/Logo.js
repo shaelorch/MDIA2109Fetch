@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const LogoCont = styled.div `
 display: flex;
+margin-top: 100px;
+justify-content:center;
 padding: 25px;
 `
 export default function Logo ({
@@ -9,7 +11,7 @@ export default function Logo ({
 }){
     return (
     <LogoCont>
-        <img height={50} src={imgtype}/>
+        <img height={200} src={imgtype}/>
     </LogoCont>
     )
 }
