@@ -4,7 +4,6 @@ const CircleCont = styled.div `
 `
 
 const CirButton = styled.button `
-display: flex;
 width: 50px;
 height: 50px;
 border-radius: 50px;
@@ -13,13 +12,18 @@ background: #D6EEFF;
 margin: 10px;
 `
 
+const ArrowCont = styled.div `
+display:flex;
+justify-content: center;
+`
+
 
 export default function circleButton ({
     imgtype='/arrow.svg'
 }){
 return <CircleCont>
     <CirButton>
-    <img height={20} src={imgtype}/>
+    <ArrowCont><img height={20} src={imgtype}/></ArrowCont>
     </CirButton>
 </CircleCont>
 }
