@@ -5,6 +5,9 @@ import CircleHeader from '../comps/CircleHeader';
 import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
 
+const div = styled.div`
+background-color:#D6EEFF;
+`
 
 export default function tutorial(){
   return <div>
