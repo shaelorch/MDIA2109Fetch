@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const queCirCont = styled.div `
-display: flex;
+display:flex;
 padding: 25px;
 `
 export default function QueCircle ({
