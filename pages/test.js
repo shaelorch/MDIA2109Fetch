@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b061347a4db5185ca56ea83695a24341e7d6d5a0
 =======
 <<<<<<< HEAD
 import AdopteeCard from "../comps/AdopteeCard";
@@ -16,5 +21,6 @@ export default function test(){
   return <div>
     <AdopteeCard />
   </div>
+>>>>>>> 92958222280e4d7beace4cd06863fb7ffaf35f99
 }
 
