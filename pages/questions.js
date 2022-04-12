@@ -31,6 +31,5 @@ export default function test(){
           ts = 'none' />
     <CircleButton />
     <Logo />
-    <MainLogo />
   </div>
 }
