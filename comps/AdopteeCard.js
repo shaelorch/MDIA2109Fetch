@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Paragraph from './Paragraph.js';
+import CircleButton from './CircleButton.js';
 
 const AdopteeCont = styled.div`
 padding: 7px;
@@ -39,5 +40,6 @@ export default function AdopteeCard({
     <NameCont>{headertxt}</NameCont>
     </HeaderCont>
     <Paragraph size='18px' labeltxt='Write a blurb about the dog here...' />
+    <CircleButton />
   </AdopteeCont>
 }
