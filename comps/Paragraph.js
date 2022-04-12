@@ -9,6 +9,7 @@ const PText = styled.div`
 font-size: ${props=>props.fontsize};
 font-family: 'Nunito', sans-serif;
 color: #502419;
+font-size: 20px;
 `
 
 export default function Paragraph({
