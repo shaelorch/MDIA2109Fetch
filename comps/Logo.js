@@ -3,15 +3,14 @@ import styled from 'styled-components';
 const LogoCont = styled.div `
 display: flex;
 margin-top:0;
-padding: 75px;
-justify-content:center;
+padding: 20px;
 `
 export default function Logo ({
-    imgtype='/MainFetchLogo.svg'
+    imgtype='/fetch_logo.svg'
 }){
     return (
     <LogoCont>
-        <img height={250} src={imgtype}/>
+        <img height={50} src={imgtype}/>
     </LogoCont>
     )
 }
