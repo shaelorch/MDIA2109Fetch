@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const LogoCont = styled.div `
 display: flex;
-margin-top: 100px;
-justify-content:center;
+margin-top:0;
 padding: 25px;
 `
 export default function Logo ({
