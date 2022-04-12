@@ -8,14 +8,15 @@ justify-content: center;
 const FormButton = styled.button`
 background-color: ${props=>props.background};
 color: ${props=>props.color};
-width: 150px;
-height: 45px;
+width: 200px;
+height: 55px;
 border: ${props=>props.border};
-border-radius:20px;
+border-radius:30px;
 margin: 10px;
 font-family: 'Passion One', cursive;
 font-size: 30px;
 -webkit-text-stroke: ${props=>props.textstroke};
+box-shadow: 0px 2px 3px #888888;
 `
 
 export default function MainButton({
