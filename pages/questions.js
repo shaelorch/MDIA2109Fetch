@@ -5,12 +5,13 @@ import CircleButton from '../comps/CircleButton';
 import QueCircle from '../comps/QueCircle';
 import Paragraph from '../comps/Paragraph';
 import Logo from '../comps/Logo';
-import MainLogo from '../comps/MainLogo';
+import Progress from '../comps/Progressbar';
 
 
 export default function test(){
   return <div>
-      
+    <Logo /> 
+    <Progress />
     <Header
        headertext='1. Occupation'
        size='50px'/>
@@ -30,6 +31,6 @@ export default function test(){
           border='5px solid #7EA172'
           ts = 'none' />
     <CircleButton />
-    <Logo />
+
   </div>
 }
