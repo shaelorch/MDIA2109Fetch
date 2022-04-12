@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const HeaderCont = styled.div`
 display:flex;
 justify-content:center;
-margin-top: 100px;
+margin-top: 20px;
 `
 const HeaderTitle = styled.div`
 font-size: ${props=>props.fontsize};
