@@ -55,7 +55,7 @@ export default function tutorial(){
     bg='#F8D2CF'
     color='#EBB2AD'
     border='5px solid #EBB2AD'
-    ts = '1px white'
+    ts = '2px white'
     />
     
   </div>
