@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const LogoCont = styled.div `
-display: flex;
+position: absolute;
 padding: 25px;
 `
 export default function Logo ({
