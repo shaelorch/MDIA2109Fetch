@@ -3,6 +3,7 @@ import Header from '../comps/Header.js';
 import Paragraph from '../comps/Paragraph.js';
 import MatchImage from '../comps/MatchImage.js';
 import IconInfo from '../comps/IconInfo.js';
+import CircleButtonRight from '../comps/circleButtonRight.js';
 
 export default function results(){
     return <div>
@@ -35,6 +36,13 @@ export default function results(){
         <IconInfo 
         text='$200/month'
         />
+
+        <IconInfo 
+        text='1hr exercise/day'
+        image='/clock-icon.svg'
+        />
+
+        <CircleButtonRight />
 
 
     </div>
