@@ -24,6 +24,6 @@ export default function Paragraph({
 }){
 
   return <ParaCont>
-    <PText fontsize={size} fontweight={weight} marginleft={left} marginright={right}>{labeltxt}</PText>
+    <PText fontsize={size} fontweight={weight}>{labeltxt}</PText>
   </ParaCont>
 }
