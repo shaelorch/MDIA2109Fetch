@@ -17,7 +17,7 @@ justify-content: center;
 `
 
 
-export default function circleButton ({
+export default function CircleButtonLeft ({
     imgtype='/arrow.svg'
 }){
 return <CircleCont>
