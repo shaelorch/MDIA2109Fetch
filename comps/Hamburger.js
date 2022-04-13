@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 const HamburgerCont = styled.div`
-display:flex;
-justify-content:right;
-padding:10px;
+display: flex;
+margin-top:0;
+padding: 30px;
+justify-content: right;
 `
 const HamburgerIcon = styled.div`
 width: 32px;

@@ -1,15 +1,20 @@
-import Hamburger from '../comps/Hamburger'
-import Logo from '../comps/Logo'
-import Header from '../comps/Header'
+import TopBar from '../comps/TopBar.js';
+import Header from '../comps/Header.js';
+import Paragraph from '../comps/Paragraph.js';
 
 export default function results(){
     return <div>
-        <Logo />
-
-        <Hamburger />
+        <TopBar />
 
         <Header 
         headertext='MEET YOUR MATCH'
+        size='50px'
+        />
+
+        <Paragraph
+        labeltxt='Your match is...'
+        weight='bold'
+        size='20px'
         />
 
 
