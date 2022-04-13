@@ -1,17 +1,17 @@
+import TopBar from '../comps/TopBar';
 import Header from '../comps/Header';
-import Hamburger from '../comps/Hamburger';
 import MainButton from '../comps/MainButton';
-import CircleButton from '../comps/CircleButton';
 import QueCircle from '../comps/QueCircle';
 import Paragraph from '../comps/Paragraph';
 import Logo from '../comps/Logo';
 import Progress from '../comps/Progressbar';
+import NextandBack from '../comps/NextandBack';
+
 
 
 export default function test(){
   return <div>
-    <Logo /> 
-    <Hamburger />
+    <TopBar />
     <Progress />
     <Header
        headertext='1. Occupation'
@@ -31,7 +31,7 @@ export default function test(){
           color='#7EA172'
           border='5px solid #7EA172'
           ts = 'none' />
-    <CircleButton />
+    <NextandBack />
 
   </div>
 }
