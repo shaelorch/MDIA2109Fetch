@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const HamburgerCont = styled.div`
 display:flex;
+position:sticky;
 justify-content:right;
 padding:10px;
 `
