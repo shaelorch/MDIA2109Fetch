@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const LogoCont = styled.div `
 display: flex;
-justify-content: center;
-padding: 25px;
+justify-content: center
 `
 export default function MainLogo ({
     imgtype='/MainFetchLogo.svg'
