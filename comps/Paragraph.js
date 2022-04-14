@@ -21,9 +21,11 @@ export default function Paragraph({
   weight='normal',
   right='100px',
   left='100px',
+  align='left'
+ 
 }){
 
-  return <ParaCont>
+  return <ParaCont textalign={align} >
     <PText fontsize={size} fontweight={weight}>{labeltxt}</PText>
   </ParaCont>
 }

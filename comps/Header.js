@@ -8,6 +8,7 @@ margin-top: 20px;
 text-align: center;
 `
 const HeaderTitle = styled.div`
+text-align:center;
 font-size: ${props=>props.fontsize};
 font-family: 'Passion One', cursive;
 -webkit-text-stroke-width: 2px;
