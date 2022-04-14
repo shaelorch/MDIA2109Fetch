@@ -3,7 +3,9 @@ import Header from '../comps/Header.js';
 import Paragraph from '../comps/Paragraph.js';
 import MatchImage from '../comps/MatchImage.js';
 import IconInfo from '../comps/IconInfo.js';
-import CircleButtonRight from '../comps/circleButtonRight.js';
+import CircleButtonRight from '../comps/CircleButtonRight.js';
+import AdopteeCard from '../comps/AdopteeCard.js';
+import MainButton from '../comps/mainButton.js';
 
 export default function results(){
     return <div>
@@ -42,7 +44,40 @@ export default function results(){
         image='/clock-icon.svg'
         />
 
-        <CircleButtonRight />
+        <CircleButtonRight
+        deg='rotate(90deg)'
+        position='center'
+        />
+
+        <Header
+        headertext='Adoptable Pups'
+        size='50px'
+        colour='#97D4FF'
+        />
+
+        <AdopteeCard />
+
+        <AdopteeCard />
+
+        <AdopteeCard />
+
+        <MainButton 
+        ts='0px'
+        border='0px'
+        color='#fff'
+        bg='#EBB2AD'
+        labeltxt='Find a Pup!'
+        />
+
+        <MainButton 
+        ts='0px'
+        border='0px'
+        color='#fff'
+        bg='#EBB2AD'
+        labeltxt='Success Stories'
+        mgintop='15px'
+        />
+
 
 
     </div>
