@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { useRouter } from "next/router";
-
 const ButtonCont = styled.div`
 display:flex;
 justify-content: center;
@@ -29,7 +27,6 @@ export default function MainButton({
     border='5px solid #7EA172',
     ts = '2px white'
 }){
-    const r = useRouter();
 
     return <ButtonCont>
         <FormButton 
@@ -38,7 +35,6 @@ export default function MainButton({
         border={border}
         textstroke={ts}
         
-        onClick={() => r.replace({pathname: "/tutorial"})}
 
         >{labeltxt}</FormButton>
     </ButtonCont>
