@@ -48,7 +48,7 @@ export default function Questions(){
           ts = 'none' />
    
  { 
-    Number(qnum) === qs.length -1 && 
+    Number(qnum) < qs.length+4 && 
     <NextandBack onClickNext={
       ()=>r.push({
         pathname:"/questions",
@@ -56,7 +56,17 @@ export default function Questions(){
           qnum:(Number(qnum)+1 >= qs.length) ? qs.length -1 : Number(qnum) +1
         }
       })
-    }></NextandBack>
+    }
+    onClickBack={
+      ()=>r.push({
+        pathname:"/questions",
+        query: {
+          qnum:(Number(qnum)-1 >= qs.length) ? qs.length +1 : Number(qnum) -1
+        }
+      })
+    }
+    
+    ></NextandBack>
   }
 
   </BackgroundDiv>
