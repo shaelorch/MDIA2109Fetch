@@ -1,6 +1,5 @@
 import Header from '../comps/Header';
-import Hamburger from '../comps/Hamburger';
-import Logo from '../comps/Logo';
+import TopBar from '../comps/TopBar';
 import CircleHeader from '../comps/CircleHeader';
 import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
@@ -23,10 +22,7 @@ padding: 10px;
 
 export default function tutorial(){
   return <TutDiv>
-    <Logo/>
-    <HamDiv>
-    <Hamburger/>
-    </HamDiv>
+    <TopBar/>
     <PText>
     <Header
         headertext='HOW DOES IT WORK?'
