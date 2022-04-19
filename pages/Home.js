@@ -7,8 +7,6 @@ import MainButton from "../comps/mainButton";
 import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
 
-
-
 const HomeDiv = styled.div `
     background-image:url("/background.svg")
      
@@ -36,14 +34,12 @@ const HbCont = styled.div`
 `;
 
 
-
-
 export default function Home(){
-    const r = useRouter()
+
+    const r = useRouter();
 
     return <HomeDiv>
-
-            
+ 
             <HbCont>
                  <Hamburger />
             </HbCont>
@@ -65,10 +61,10 @@ export default function Home(){
                 bg="#EBB2AD" 
                 border="#ffffff"
                 color="#EBB2AD"
+
                 onClick = {
                     ()=>r.push("/tutorial")
-                }
-    
+                  }
             />
 
            <ButtonCont>
@@ -77,9 +73,11 @@ export default function Home(){
                 bg="#EBB2AD" 
                 border="#ffffff" 
                 color="#EBB2AD"
+                
                 onClick = {
-                    ()=>r.push("")
-                }
+                    ()=>r.push("/questions")
+                  }
+
                 />
             </ButtonCont>
         </HomeDiv>
