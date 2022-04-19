@@ -10,7 +10,7 @@ import { qs } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
 
 export default function Questions(){
-
+const r = useRouter()
   var {qnum} = r.query;
   if(qnum === undefined){
     qnum = 0;
