@@ -18,9 +18,10 @@ justify-content: center;
 
 
 export default function CircleButtonLeft ({
-    imgtype='/arrow.svg'
+    imgtype='/arrow.svg',
+    onClick = ()=>{}
 }){
-return <CircleCont>
+return <CircleCont onClick = {onClick}>
     <CirButton>
     <ArrowCont><img height={20} src={imgtype}/></ArrowCont>
     </CirButton>

@@ -7,12 +7,15 @@ display:flex;
 justify-content: space-between;
 margin-top: 30px;
 `
-export default function NextandBack(){
+export default function NextandBack({
+    onClickNext=()=>{},
+    onClickBack=()=>{}
+}){
     return <CirButtonCont>
-        <CircleButtonLeft>
+        <CircleButtonLeft onClick = {onClickBack}>
 
         </CircleButtonLeft>
-        <CircleButtonRight>
+        <CircleButtonRight onClick = {onClickNext}>
 
         </CircleButtonRight>
     </CirButtonCont>

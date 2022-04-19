@@ -27,9 +27,10 @@ export default function CircleButtonRight ({
     wid='50px',
     hgt='50px',
     border='7px solid #97D4FF',
-    colour='#D6EEFF'
+    colour='#D6EEFF',
+    onClick = ()=>{}
 }){
-return <CircleCont justifycont={position}>
+return <CircleCont onClick={onClick} justifycont={position}>
     <CirButton width={wid} height={hgt} brder={border} background={colour}>
     <ArrowCont rotate={deg}><img height={20} src={imgtype}/></ArrowCont>
     </CirButton>

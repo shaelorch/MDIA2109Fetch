@@ -37,7 +37,10 @@ const r = useRouter()
           color='#7EA172'
           border='5px solid #7EA172'
           ts = 'none' />
-    <NextandBack />
+    <NextandBack 
+    onClickNext={()=>alert("next")}
+    onClickBack={()=>alert("back")}
+    />
 
   </div>
 }
