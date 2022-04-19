@@ -46,10 +46,28 @@ export default function Questions(){
           color='#7EA172'
           border='5px solid #7EA172'
           ts = 'none' />
-    <NextandBack 
-    onClickNext={()=>alert("next")}
-    onClickBack={()=>alert("back")}
-    />
+   
+ { 
+    Number(qnum) < qs.length+4 && 
+    <NextandBack onClickNext={
+      ()=>r.push({
+        pathname:"/questions",
+        query: {
+          qnum:(Number(qnum)+1 >= qs.length) ? qs.length -1 : Number(qnum) +1
+        }
+      })
+    }
+    onClickBack={
+      ()=>r.push({
+        pathname:"/questions",
+        query: {
+          qnum:(Number(qnum)-1 >= qs.length) ? qs.length +1 : Number(qnum) -1
+        }
+      })
+    }
+    
+    ></NextandBack>
+  }
 
   </BackgroundDiv>
 }
