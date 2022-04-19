@@ -10,13 +10,6 @@ import NextandBack from '../comps/NextandBack';
 import { qs } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
 
-export default function Questions(){
-const r = useRouter()
-  var {qnum} = r.query;
-  if(qnum === undefined){
-    qnum = 0;
-  }
-}
 const BackgroundDiv = styled.div `
 background-image: linear-gradient(#D6EEFF, #D6EEC9)`
 
@@ -24,7 +17,11 @@ const ButtonCont = styled.div `
 
 `
 export default function Questions(){
-
+  const r = useRouter()
+  var {qnum} = r.query;
+  if(qnum === undefined){
+    qnum = 0;
+  }
   return <BackgroundDiv>
     <TopBar />
     <Progress />  
