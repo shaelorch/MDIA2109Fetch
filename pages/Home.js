@@ -6,6 +6,10 @@ import Paragraph from "../comps/Paragraph";
 import MainButton from "../comps/mainButton";
 import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24ebe8e87ffb5a8fca7b281df4f51dfd546320ca
 
 
 const HomeDiv = styled.div `
