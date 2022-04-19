@@ -11,11 +11,6 @@ import { useRouter } from 'next/router';
 
 export default function Questions(){
 
-  var {qnum} = r.query;
-  if(qnum === undefined){
-    qnum = 0;
-  }
-
   return <div>
     <TopBar />
     <Progress />
