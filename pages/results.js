@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import TopBar from '../comps/TopBar.js';
 import Header from '../comps/Header.js';
 import Paragraph from '../comps/Paragraph.js';
@@ -7,8 +8,13 @@ import CircleButtonRight from '../comps/CircleButtonRight.js';
 import AdopteeCard from '../comps/AdopteeCard.js';
 import MainButton from '../comps/mainButton.js';
 
+const ResDiv = styled.div`
+background-color:#f0f4e4;
+opacity: ;
+`
+
 export default function results(){
-    return <div>
+    return <ResDiv>
         <TopBar />
 
         <Header 
@@ -80,5 +86,5 @@ export default function results(){
 
 
 
-    </div>
+    </ResDiv>
 }

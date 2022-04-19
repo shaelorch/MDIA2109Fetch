@@ -4,7 +4,7 @@ import CircleButtonRight from './CircleButtonRight.js';
 
 const AdopteeCont = styled.div`
 padding: 7px;
-background-color: #EEE;
+background-color: #FFF;
 border-radius: 30px;
 width: 360px;
 height: 180px;
