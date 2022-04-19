@@ -27,9 +27,12 @@ export default function MainButton({
     border='5px solid #7EA172',
     ts = '2px white',
     onClick=()=>{}
+
+   
 }){
-    return <ButtonCont onClick={onClick}>
-        <FormButton 
+    return <ButtonCont>
+        <FormButton onClick={onClick}
+
         background={bg} 
         color={color} 
         border={border}

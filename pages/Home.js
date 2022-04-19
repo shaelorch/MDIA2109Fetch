@@ -1,16 +1,11 @@
 
 import styled from "styled-components";
-
 import Header from "../comps/Header";
-
 import MainLogo from "../comps/MainLogo";
-
 import Paragraph from "../comps/Paragraph";
-
 import MainButton from "../comps/mainButton";
-
 import Hamburger from "../comps/Hamburger";
-
+import {useRouter} from 'next/router';
 
 
 const HomeDiv = styled.div `
@@ -40,14 +35,12 @@ const HbCont = styled.div`
 `;
 
 
-
-
 export default function Home(){
-    
+
+    const r = useRouter();
 
     return <HomeDiv>
-
-            
+ 
             <HbCont>
                  <Hamburger />
             </HbCont>
@@ -69,9 +62,10 @@ export default function Home(){
                 bg="#EBB2AD" 
                 border="#ffffff"
                 color="#EBB2AD"
-                
-                onClick={() => r.replace({ pathname: "/tutorial"})}
-    
+
+                onClick = {
+                    ()=>r.push("/tutorial")
+                  }
             />
 
            <ButtonCont>
@@ -79,7 +73,13 @@ export default function Home(){
                 labeltxt="Find a pup!" 
                 bg="#EBB2AD" 
                 border="#ffffff" 
-                color="#EBB2AD"/>
+                color="#EBB2AD"
+                
+                onClick = {
+                    ()=>r.push("/questions")
+                  }
+
+                />
             </ButtonCont>
         </HomeDiv>
 }
