@@ -11,6 +11,8 @@ import MainButton from "../comps/mainButton";
 
 import Hamburger from "../comps/Hamburger";
 
+
+
 const HomeDiv = styled.div `
     background-image:url("/background.svg")
      
@@ -22,7 +24,6 @@ const ParaCont = styled.div`
     margin-left:100px;
     margin-right:100px;
     margin-top:10px;
-
 `;
 
 const ButtonCont = styled.div`
@@ -39,7 +40,11 @@ const HbCont = styled.div`
 `;
 
 
+
+
 export default function Home(){
+    
+
     return <HomeDiv>
 
             
@@ -59,15 +64,18 @@ export default function Home(){
                  <Paragraph className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!"/>
             </ParaCont>
            
-
             <MainButton 
-            labeltxt="Tutorial" 
-            bg="#EBB2AD" 
-            border="#ffffff" 
-            color="#EBB2AD"/>
+                labeltxt="Tutorial" 
+                bg="#EBB2AD" 
+                border="#ffffff"
+                color="#EBB2AD"
+                
+                onClick={() => r.replace({ pathname: "/tutorial"})}
+    
+            />
 
            <ButtonCont>
-                <MainButton 
+                <MainButton className='quizButton' 
                 labeltxt="Find a pup!" 
                 bg="#EBB2AD" 
                 border="#ffffff" 

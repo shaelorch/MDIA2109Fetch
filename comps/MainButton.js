@@ -28,11 +28,19 @@ export default function MainButton({
     ts = '2px white',
     onClick=()=>{}
 }){
+<<<<<<< HEAD:comps/MainButton.js
     return <ButtonCont onClick={onClick}>
+=======
+
+    return <ButtonCont>
+>>>>>>> b47a2ffd06f986e675f3e2ed3d51d68e1865cd67:comps/mainButton.js
         <FormButton 
         background={bg} 
         color={color} 
         border={border}
-        textstroke={ts}>{labeltxt}</FormButton>
+        textstroke={ts}
+        
+
+        >{labeltxt}</FormButton>
     </ButtonCont>
 }
