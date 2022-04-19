@@ -78,7 +78,7 @@ export default function Home(){
                 border="#ffffff" 
                 color="#EBB2AD"
                 onClick = {
-                    ()=>r.push("")
+                    ()=>r.push("/info")
                 }
                 />
             </ButtonCont>

@@ -5,7 +5,7 @@ display:flex;
 justify-content: center;
 margin-right:${props=>props.marginright};
 margin-left:${props=>props.marginleft};
-text-align:left;
+text-align:${props=>props.textalign};
 
 `
 const PText = styled.div`

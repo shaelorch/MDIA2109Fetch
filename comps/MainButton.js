@@ -13,7 +13,7 @@ width: 200px;
 height: 55px;
 border: ${props=>props.border};
 border-radius:30px;
-margin: 10px;
+margin: 10x;
 font-family: 'Passion One', cursive;
 font-size: 30px;
 -webkit-text-stroke: ${props=>props.textstroke};
