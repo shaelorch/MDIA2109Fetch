@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const HamburgerCont = styled.div`
 display:flex;
-position:fixed;
 justify-content:right;
 padding:20px;
 `
