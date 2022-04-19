@@ -4,6 +4,7 @@ import CircleHeader from '../comps/CircleHeader';
 import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const TutDiv = styled.div`
 background-color:#D6EEFF;
@@ -21,6 +22,7 @@ padding: 10px;
 `
 
 export default function tutorial(){
+  const r = useRouter()
   return <TutDiv>
     <TopBar/>
     <PText>
@@ -76,11 +78,14 @@ export default function tutorial(){
     </PText>
 
     <MainButton
-    labeltxt='Find A Pup'
+    labeltxt='Next'
     bg='#F8D2CF'
     color='#EBB2AD'
     border='5px solid #EBB2AD'
     ts = '2px white'
+    onClick = {
+      ()=>r.push("/questions")
+    }
     />
     
   </TutDiv>
