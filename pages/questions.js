@@ -11,11 +11,17 @@ import { qs } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
 
 const BackgroundDiv = styled.div `
-background-image: linear-gradient(#D6EEFF, #D6EEC9)`
+background-image: linear-gradient(#D6EEFF, #D6EEC9)
+`
 
 const ButtonCont = styled.div `
-
 `
+
+const BottomCont = styled.div `
+position: relative;
+margin-top: 220px;
+`
+
 export default function Questions(){
   const r = useRouter()
   var {qnum} = r.query;
@@ -30,7 +36,8 @@ export default function Questions(){
        size='50px'/>
 
     <Paragraph
-        labeltxt='What type of job do you have?' />
+        labeltxt='What type of job do you have?'
+        size='20px' />
 
     <ButtonCont>
     <MainButton
@@ -47,6 +54,7 @@ export default function Questions(){
           border='5px solid #7EA172'
           ts = 'none' />
    
+   <BottomCont>
  { 
     Number(qnum) < qs.length+4 && 
     <NextandBack onClickNext={
@@ -68,6 +76,7 @@ export default function Questions(){
     
     ></NextandBack>
   }
+  </BottomCont>
 
   </BackgroundDiv>
 }
