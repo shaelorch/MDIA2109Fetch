@@ -4,7 +4,6 @@ import Header from '../comps/Header';
 import MainButton from '../comps/MainButton';
 import QueCircle from '../comps/QueCircle';
 import Paragraph from '../comps/Paragraph';
-import Logo from '../comps/Logo';
 import Progress from '../comps/Progressbar';
 import NextandBack from '../comps/NextandBack';
 import { qs } from '../comps/data/que_content';
