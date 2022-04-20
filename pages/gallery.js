@@ -3,6 +3,7 @@ import TopBar from '../comps/TopBar.js';
 import Header from '../comps/Header.js';
 import Paragraph from '../comps/Paragraph.js';
 import MatchImage from '../comps/MatchImage.js';
+import Menu from '../comps/Menu.js';
 
 const GalDiv = styled.div`
 background-color:#f0f4e4;
