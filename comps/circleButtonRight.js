@@ -28,9 +28,13 @@ export default function CircleButtonRight ({
     hgt='50px',
     border='7px solid #97D4FF',
     colour='#D6EEFF',
-    onClick = ()=>{}
+    onClick = ()=>{},
+    onMouseOver=()=>{},
+    onMouseOut=()=>{}
 }){
-return <CircleCont onClick={onClick} justifycont={position}>
+return <CircleCont nClick={onClick}
+onMouseOver={onMouseOver}
+onMouseOut={onMouseOut} justifycont={position}>
     <CirButton width={wid} height={hgt} brder={border} background={colour}>
     <ArrowCont rotate={deg}><img height={20} src={imgtype}/></ArrowCont>
     </CirButton>
