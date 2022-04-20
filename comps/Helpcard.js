@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Paragraph from './Paragraph.js'
 
 const HelpCont = styled.div `
     display:flex;
@@ -7,9 +8,9 @@ const HelpCont = styled.div `
 `;
 
 const HelpCard = styled.div `
-    width:300px;
+    width:${props=>props.width};
     height:300px;
-    border:#F8D2CF solid 10px;
+    border:${props=>props.bder};
     border-radius:50px; 
 `;
 
@@ -36,18 +37,20 @@ const CardText = styled.p `
  
 
 export default function Help({
-    ptext="Help"
+    ptext="Help",
+    border="#F8D2CF solid 10px",
+    w="300px",
 }){
     return (
 
 
         <HelpCont>
-           <HelpCard>
+           <HelpCard bder={border} width={w}>
                         <QCont>
                             <img height={30} src='/Helpicon.svg' />
                         </QCont>
                 <TextCont>
-                     <CardText>{ptext}</CardText>
+                     <Paragraph labeltxt={ptext}/>
                 </TextCont>
             
            </HelpCard>

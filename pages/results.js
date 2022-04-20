@@ -7,13 +7,15 @@ import IconInfo from '../comps/IconInfo.js';
 import CircleButtonRight from '../comps/CircleButtonRight.js';
 import AdopteeCard from '../comps/AdopteeCard.js';
 import MainButton from '../comps/mainButton.js';
+import {useRouter} from 'next/router';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
-opacity: ;
 `
 
 export default function results(){
+    const r = useRouter()
+
     return <ResDiv>
         <TopBar />
 
@@ -73,6 +75,9 @@ export default function results(){
         color='#fff'
         bg='#EBB2AD'
         labeltxt='Find a Pup!'
+        onClick = {
+            ()=>r.push("/resources")
+        }
         />
 
         <MainButton 
