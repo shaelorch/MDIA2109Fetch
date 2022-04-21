@@ -27,15 +27,11 @@ export default function MainButton({
     border='5px solid #7EA172',
     ts = '2px white',
     onClick=()=>{},
-    onMouseOver=()=>{},
-    onMouseOut=()=>{}
 
    
 }){
     return <ButtonCont>
         <FormButton onClick={onClick}
-        onMouseOver={onMouseOver}
-        onMouseOut={onMouseOut}
 
         background={bg} 
         color={color} 

@@ -6,6 +6,7 @@ import Paragraph from "../comps/Paragraph";
 import MainButton from "../comps/mainButton";
 import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
+import { Main } from "next/document";
 
 const HomeDiv = styled.div `
     background-image:url("/background.svg")
@@ -34,9 +35,13 @@ const HbCont = styled.div`
 `;
 
 
+
+
+
 export default function Home(){
 
     const r = useRouter();
+
 
     return <HomeDiv>
  
@@ -64,7 +69,11 @@ export default function Home(){
 
                 onClick = {
                     ()=>r.push("/tutorial")
-                  }
+                }
+
+                onMouseOver = {
+                    ()=>style.backgroundColor = "#F8D2CF"
+                }
             />
 
            <ButtonCont>
