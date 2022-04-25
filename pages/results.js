@@ -78,8 +78,6 @@ export default function results(){
 
         <AdopteeCard />
 
-        <AdopteeCard />
-
         <MainButton 
         ts='2px white'
         border='7px solid #EBB2AD'

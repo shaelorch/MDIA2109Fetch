@@ -1,9 +1,3 @@
-export const rs = {
-    young:{
-        title:'you are young'
-    }
-}
-
 export const qs = [
     {
         title: "1. Occupation",
@@ -21,7 +15,7 @@ export const qs = [
         {
             txt:"Full-time",
             senior: 0,
-            adult: 0,
+            adult: 1,
             young: 2,
             large: 0,
             medium: 1,
