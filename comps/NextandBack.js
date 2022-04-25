@@ -5,7 +5,7 @@ import CircleButtonRight from './circleButtonRight.js';
 const CirButtonCont = styled.div `
 display:flex;
 justify-content: space-between;
-margin-top: 30px;
+margin-top: 20px;
 `
 export default function NextandBack({
     onClickNext=()=>{},

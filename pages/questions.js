@@ -41,7 +41,8 @@ export default function Questions(){
         size='20px' 
         align='center'/>
 {
-        qs[qnum].choices.map((o, i )=> <ButtonCont><MainButton
+        qs[qnum].choices.map((o, i )=> 
+        <ButtonCont><MainButton
         labeltxt={o.txt}
         bg='#D6EEC9'
         color='#7EA172'
@@ -61,23 +62,7 @@ export default function Questions(){
         )}
         /></ButtonCont> )
       }
-    {/* <ButtonCont>
 
-     
-    <MainButton
-          labeltxt='Part-time'
-          bg='#D6EEC9'
-          color='#7EA172'
-          border='5px solid #7EA172'
-          ts = 'none' />
-    </ButtonCont> */}
-    {/* <MainButton
-          labeltxt='Full-time'
-          bg='#D6EEC9'
-          color='#7EA172'
-          border='5px solid #7EA172'
-          ts = 'none' /> */}
-   
    <BottomCont>
 
  { 
