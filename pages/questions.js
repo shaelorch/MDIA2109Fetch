@@ -54,8 +54,9 @@ export default function Questions(){
           ts = 'none' />
    
    <BottomCont>
+
  { 
-    Number(qnum) < qs.length+4 && 
+    Number(qnum) < qs.length +4 && 
     <NextandBack onClickNext={
       ()=>r.push({
         pathname:"/questions",
@@ -64,6 +65,7 @@ export default function Questions(){
         }
       })
     }
+
     onClickBack={
       ()=>r.push({
         pathname:"/questions",
@@ -72,7 +74,6 @@ export default function Questions(){
         }
       })
     }
-    
     ></NextandBack>
   }
   </BottomCont>
