@@ -10,6 +10,7 @@ width: 300px;
 height: 250px;
 border-radius: 20px;
 margin-top: 20px;
+object-fit: cover;
 `
 const SvgCont = styled.img `
 position: absolute;
@@ -19,7 +20,7 @@ margin-top:10px;
 `
 
 export default function MatchImage({
-    image='https://placedog.net/500',
+    image='/dog.jpeg',
     svg='/photo-corners.svg'
 }){
     return <MatchCont>

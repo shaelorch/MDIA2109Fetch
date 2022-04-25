@@ -24,7 +24,7 @@ export default function results(){
     //check if the max number equates to small/medium/big
     
     //if young
-        content = rs['young'];
+       // content = rs['young'];
 
     return <ResDiv>
         <TopBar />  
@@ -73,8 +73,6 @@ export default function results(){
         size='50px'
         colour='#97D4FF'
         />
-
-        <AdopteeCard />
 
         <AdopteeCard />
 
