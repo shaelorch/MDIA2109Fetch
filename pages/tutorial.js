@@ -83,6 +83,10 @@ export default function tutorial(){
     color='#EBB2AD'
     border='5px solid #EBB2AD'
     ts = '2px white'
+    hbg = '#EBB2AD'
+    hb='none'
+
+
     onClick = {
       ()=>r.push("/questions")
     }

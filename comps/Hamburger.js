@@ -11,11 +11,13 @@ height: 28px;
 `
 
 
+
 export default function Hamburger({
+    onClick=()=>{},
     imgtype='/menu-icon.svg'
 }){
     return <HamburgerCont>
-        <HamburgerIcon> 
+        <HamburgerIcon onClick={onClick}> 
             <img height={27} src={imgtype}/>
         </HamburgerIcon>
     </HamburgerCont>

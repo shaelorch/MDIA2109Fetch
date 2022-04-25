@@ -1,18 +1,40 @@
 import styled from 'styled-components';
 import Hamburger from './Hamburger.js';
 import Logo from './Logo.js';
+import Menu from './Menu.js';
+import {useState} from 'react';
+
 
 const BarCont = styled.div `
 display:flex;
 justify-content: space-between;
 `
+
+const MenuDiv = styled.div`
+    display: ${props=>props.d};
+`
+
+
 export default function TopBar(){
-    return <BarCont>
+    
+    const [disp, setDisp] = useState("none");
+
+    return <><BarCont>
         <Logo>
 
         </Logo>
-        <Hamburger>
+
+        <Hamburger onClick={
+            ()=>setDisp("block")
+        }>
 
         </Hamburger>
     </BarCont>
+    
+        <MenuDiv d={disp}>
+            <Menu onCloseClick={
+              ()=>setDisp("none")  
+            }/>
+        </MenuDiv></>
+        
 }
