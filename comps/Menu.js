@@ -1,10 +1,14 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const MenuCont = styled.div`
 background-color: #D6EEFF;
 width: 258px;
 height: 469;
 display: flex;
+position:absolute;
+top: 20px;
+left:230px;
 flex-direction: column;
 `
 
@@ -28,24 +32,27 @@ justify-content: flex-end;
 `
 
 export default function Menu({
-    imgsize='25px'
+    onCloseClick=()=>{},
+    imgsize='25px',
 
+//onCloseClick
 }){
     return <MenuCont>
-        <MenuExit> <img height={imgsize} src="/exit-icon.svg"/></MenuExit>
+        <MenuExit onClick={onCloseClick}>
+             <img height={imgsize} src="/exit-icon.svg"/></MenuExit>
         <MenuIcon> <img height={imgsize} src="/heart-home-icon.svg" /></MenuIcon>
         <MenuLabel> Home </MenuLabel>
         <MenuIcon> <img height="20px" src="/tutorial.svg" /></MenuIcon>
-        <MenuLabel> Tutorial</MenuLabel>
+        <MenuLabel href="/tutorial"> Tutorial</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/about.svg" /></MenuIcon>
-        <MenuLabel> About Us</MenuLabel>
+        <MenuLabel href="/info"> About Us</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/find.svg" /></MenuIcon>
-        <MenuLabel> Find a Pup</MenuLabel>
+        <MenuLabel href="/"> Find a Pup</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/dog.svg" /></MenuIcon>
-        <MenuLabel> Dog Rescues</MenuLabel>
+        <MenuLabel href="/resources"> Dog Rescues</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/testimonials.svg" /></MenuIcon>
-        <MenuLabel> Testimonials</MenuLabel>
+        <MenuLabel href="/"> Testimonials</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/learn.svg" /></MenuIcon>
-        <MenuLabel> Learn More</MenuLabel>
+        <MenuLabel href="/info"> Learn More</MenuLabel>
     </MenuCont>
 }
