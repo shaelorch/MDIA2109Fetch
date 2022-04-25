@@ -15,9 +15,20 @@ background-color:#f0f4e4;
 
 export default function results(){
     const r = useRouter()
+    var content;
+    
+    //get the max number with Math.max
+
+    //check if the max number equates to young/adult/
+    
+    //check if the max number equates to small/medium/big
+    
+    //if young
+        content = rs['young'];
 
     return <ResDiv>
-        <TopBar />
+        <TopBar />  
+        {/* content.title */}
 
         <Header 
         headertext='MEET YOUR MATCH'

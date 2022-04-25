@@ -61,7 +61,7 @@ export default function Home(){
                  <Paragraph className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!"/>
             </ParaCont>
            
-            <MainButton 
+            <MainButton className="tutbut"
                 labeltxt="Tutorial" 
                 bg="#EBB2AD" 
                 border="#ffffff"
@@ -69,10 +69,6 @@ export default function Home(){
 
                 onClick = {
                     ()=>r.push("/tutorial")
-                }
-
-                onMouseOver = {
-                    ()=>style.backgroundColor = "#F8D2CF"
                 }
             />
 

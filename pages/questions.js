@@ -6,8 +6,9 @@ import QueCircle from '../comps/QueCircle';
 import Paragraph from '../comps/Paragraph';
 import Progress from '../comps/Progressbar';
 import NextandBack from '../comps/NextandBack';
-import { qs } from '../comps/data/que_content';
+import { qs, changeResults } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
+
 
 const BackgroundDiv = styled.div `
 background-image: linear-gradient(#D6EEFF, #D6EEC9)
@@ -34,24 +35,38 @@ export default function Questions(){
        headertext='1. Occupation'
        size='50px'/>
 
-    <Paragraph
-        labeltxt='What type of job do you have?'
-        size='20px' />
 
-    <ButtonCont>
+    <Paragraph
+        labeltxt={qs[qnum].title}
+        size='20px' />
+{
+        qs[qnum].choices.map((o, i )=> <ButtonCont><MainButton
+        labeltxt={o.txt}
+        bg='#D6EEC9'
+        color='#7EA172'
+        border='5px solid #7EA172'
+        ts = 'none'
+        onClick={()=> changeResults(
+          o.young
+        )}
+        /></ButtonCont> )
+      }
+    {/* <ButtonCont>
+
+     
     <MainButton
           labeltxt='Part-time'
           bg='#D6EEC9'
           color='#7EA172'
           border='5px solid #7EA172'
           ts = 'none' />
-    </ButtonCont>
-    <MainButton
+    </ButtonCont> */}
+    {/* <MainButton
           labeltxt='Full-time'
           bg='#D6EEC9'
           color='#7EA172'
           border='5px solid #7EA172'
-          ts = 'none' />
+          ts = 'none' /> */}
    
    <BottomCont>
  { 
@@ -68,7 +83,7 @@ export default function Questions(){
       ()=>r.push({
         pathname:"/questions",
         query: {
-          qnum:(Number(qnum)-1 >= qs.length) ? qs.length +1 : Number(qnum) -1
+          qnum:(Number(qnum)-1 > 0) ? Number(qnum) -1 : 0
         }
       })
     }

@@ -1,3 +1,9 @@
+export const rs = {
+    young:{
+        title:'you are young'
+    }
+}
+
 export const qs = [
     {
         title:"What type of job do you have?",
@@ -102,12 +108,21 @@ export const qs = [
 ]
 
 export const results = {
-    young: 0,
-    adult: 0,
-    senior: 0,
+    young: 2,
+    adult: 4,
+    senior: 9,
     small: 0,
-    medium: 0,
-    large: 0,
+    medium: 2,
+    large: 1,
+}
+
+export function changeResults(
+    y
+){
+
+    results.young = results.young + y;
+    console.log(results)
+
 }
 
 

@@ -32,7 +32,7 @@ export default function CircleButtonRight ({
     onMouseOver=()=>{},
     onMouseOut=()=>{}
 }){
-return <CircleCont nClick={onClick}
+return <CircleCont onClick={onClick}
 onMouseOver={onMouseOver}
 onMouseOut={onMouseOut} justifycont={position}>
     <CirButton width={wid} height={hgt} brder={border} background={colour}>

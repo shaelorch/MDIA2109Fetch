@@ -20,6 +20,8 @@ font-size: 30px;
 box-shadow: 0px 2px 3px #888888;
 `
 
+
+
 export default function MainButton({
     labeltxt='Yes',
     bg='#D6EEC9',
