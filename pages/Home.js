@@ -66,6 +66,10 @@ export default function Home(){
                 bg="#EBB2AD" 
                 border="#ffffff"
                 color="#EBB2AD"
+                ts="none"
+                color='white'
+                hbg="#EBB2AD"
+      
 
                 onClick = {
                     ()=>r.push("/tutorial")
@@ -77,8 +81,9 @@ export default function Home(){
                 labeltxt="Find a pup!" 
                 bg="#EBB2AD" 
                 border="#ffffff" 
-                color="#EBB2AD"
-                
+                color="white"
+                ts="none"
+                hbg="#EBB2AD"
                 onClick = {
                     ()=>r.push("/info")
                 }
