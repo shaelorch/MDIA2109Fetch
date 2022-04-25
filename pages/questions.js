@@ -32,13 +32,14 @@ export default function Questions(){
     <TopBar />
     <Progress />  
       <Header
-       headertext='1. Occupation'
+       headertext={qs[qnum].title}
        size='50px'/>
 
 
     <Paragraph
-        labeltxt={qs[qnum].title}
-        size='20px' />
+        labeltxt={qs[qnum].question}
+        size='20px' 
+        align='center'/>
 {
         qs[qnum].choices.map((o, i )=> <ButtonCont><MainButton
         labeltxt={o.txt}
@@ -46,8 +47,17 @@ export default function Questions(){
         color='#7EA172'
         border='5px solid #7EA172'
         ts = 'none'
+        hb='none'
+        hc='white'
+        hbg='#7EA172'
+
         onClick={()=> changeResults(
-          o.young
+          o.young,
+          o.adult,
+          o.senior,
+          o.small,
+          o.medium,
+          o.large
         )}
         /></ButtonCont> )
       }

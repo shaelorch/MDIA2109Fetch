@@ -6,7 +6,8 @@ export const rs = {
 
 export const qs = [
     {
-        title:"What type of job do you have?",
+        title: "1. Occupation",
+        question: "What type of job do you have?",
         choices: [{
             txt: "Part-time",
             senior: 2,
@@ -30,7 +31,8 @@ export const qs = [
     },
 
     {
-        title:"How much are you willing to spend monthly on your potential dog?",
+        title:"2. Costs",
+        question:"How much are you willing to spend monthly on your potential dog?",
         choices: [{
             txt: "$150-300",
             senior: 0,
@@ -61,7 +63,8 @@ export const qs = [
         ]
     },
     {
-        title:"Pick which suits your living situation.",
+        title:"3. Housing",
+        question: "Pick which suits your living situation.",
         choices: [{
             txt: "House",
             senior: 1,
@@ -83,7 +86,8 @@ export const qs = [
         ]
     },
     {
-        title:"Are you willing to spend 30mins or more walking your dog?",
+        title:"4. Daily Activity",
+        question:"Are you willing to spend 30mins or more walking your dog?",
         choices: [{
             txt: "Yes",
             senior: 1,
@@ -108,19 +112,29 @@ export const qs = [
 ]
 
 export const results = {
-    young: 2,
-    adult: 4,
-    senior: 9,
+    young: 0,
+    adult: 0,
+    senior: 0,
     small: 0,
-    medium: 2,
-    large: 1,
+    medium: 0,
+    large: 0,
 }
 
 export function changeResults(
-    y
+    y,
+    ad,
+    sr,
+    sm,
+    md,
+    l
 ){
 
     results.young = results.young + y;
+    results.adult = results.adult + ad;
+    results.senior = results.senior + sr;
+    results.small = results.small + sm;
+    results.medium = results.medium + md;
+    results.large = results.large +l;
     console.log(results)
 
 }

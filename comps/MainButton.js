@@ -18,6 +18,11 @@ font-family: 'Passion One', cursive;
 font-size: 30px;
 -webkit-text-stroke: ${props=>props.textstroke};
 box-shadow: 0px 2px 3px #888888;
+&:hover{
+    background-color: ${props=>props.hoverbackground};
+    color: ${props=>props.hovercolor};
+    border: ${props=>props.hoverborder};
+}
 `
 
 
@@ -28,6 +33,9 @@ export default function MainButton({
     color='#7EA172',
     border='5px solid #7EA172',
     ts = '2px white',
+    hbg='#7EA172',
+    hc='#FFFFFF',
+    hb='5px solid #F8D2CF',
     onClick=()=>{},
 
    
@@ -39,6 +47,9 @@ export default function MainButton({
         color={color} 
         border={border}
         textstroke={ts}
+        hoverbackground={hbg}
+        hovercolor={hc}
+        hoverborder={hb}
         >{labeltxt}</FormButton>
     </ButtonCont>
 }

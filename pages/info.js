@@ -60,8 +60,9 @@ export default function info(){
         border='0px'
         bg='#EBB2AD'
         color='#FFF'
-        ts='0px'
+        ts='none'
         labeltxt='Yes'
+        hbg="#EBB2AD"
         onClick={
             ()=>r.push("/questions")
         }
@@ -72,8 +73,9 @@ export default function info(){
             border='0px'
             bg='#EBB2AD'
             color='#FFF'
-            ts='0px'
+            ts='none'
             labeltxt='Tell Me More'
+            hbg="#EBB2AD"
             onClick={
                 ()=>r.push("/")
             }
