@@ -1,6 +1,6 @@
 export const rs = [
     {
-        img: 0,
+        img: '../smallyoung.jpg',
         title:'Small Young Dog',
         tagline: 'Energetic, Playful, Lapdog',
         cost: '$500/month',
@@ -21,7 +21,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../smalladult.jpg',
         title:'Small Adult Dog',
         tagline: 'Loving, Happy, Playful',
         cost: '$200/month',
@@ -42,7 +42,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../smallsenior.jpg',
         title:'Small Senior Dog',
         tagline: 'Calm, Loving, Lapdog',
         cost: '$800/month',
@@ -63,7 +63,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../mediumyoung.jpg',
         title:'Medium Young Dog',
         tagline: 'Athletic, Family, Energetic',
         cost: '$400/month',
@@ -84,7 +84,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../mediumadult.jpg',
         title:'Medium Adult Dog',
         tagline: 'Athletic, Intelligent, Family-Oriented',
         cost: '$150/month',
@@ -105,7 +105,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../mediumsenior.webp',
         title:'Medium Senior Dog',
         tagline: 'Mature, Intelligent, Calm',
         cost: '$650/month',
@@ -126,7 +126,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../largeyoung.jpg',
         title:'Large Young Dog',
         tagline: 'Energetic, Clumsy, Playful',
         cost: '$500/month',
@@ -147,7 +147,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: 'Largeadult.jpeg',
         title:'Large Adult Dog',
         tagline: 'Loyal, Protective, Smart',
         cost: '$200/month',
@@ -168,7 +168,7 @@ export const rs = [
     },
 
     {
-        img: 0,
+        img: '../largesenior.webp',
         title:'Large Senior Dog',
         tagline: 'Mature, Loyal, Calm',
         cost: '$800/month',
