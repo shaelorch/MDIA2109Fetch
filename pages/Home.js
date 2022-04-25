@@ -7,10 +7,12 @@ import MainButton from "../comps/mainButton";
 import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
 import { Main } from "next/document";
+import {useState} from 'react';
+import Menu from "../comps/Menu";
+import TopBar from "../comps/TopBar";
 
 const HomeDiv = styled.div `
     background-image:url("/background.svg")
-     
 `;
 
 const ParaCont = styled.div`
@@ -36,58 +38,50 @@ const HbCont = styled.div`
 
 
 
-
-
 export default function Home(){
 
     const r = useRouter();
 
+    const [disp, setDisp] = useState("none");
 
     return <HomeDiv>
- 
-            <HbCont>
-                 <Hamburger />
-            </HbCont>
-           
-            <TitleCont>
-                <Header 
-            headertext="WELCOME TO"
-            />
-            </TitleCont>
-            
-            <MainLogo />
-       
-            <ParaCont>
-                 <Paragraph className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!"/>
-            </ParaCont>
-           
-            <MainButton className="tutbut"
-                labeltxt="Tutorial" 
-                bg="#EBB2AD" 
-                border="#ffffff"
-                color="#EBB2AD"
-                ts="none"
-                color='white'
-                hbg="#EBB2AD"
-      
 
-                onClick = {
-                    ()=>r.push("/tutorial")
-                }
-            />
+        <HbCont>
+            <Hamburger onClick={()=>setDisp("block")} />
+        </HbCont>
+        <MenuDiv d={disp}>
+            <Menu onCloseClick={()=>setDisp("none")} />
+        </MenuDiv>
+        
+        <TitleCont>
+            <Header
+                headertext="WELCOME TO" />
+        </TitleCont>
+        <MainLogo />
+        <ParaCont>
+            <Paragraph className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!" />
+        </ParaCont>
+        <MainButton className="tutbut"
+            labeltxt="Tutorial"
+            bg="#EBB2AD"
+            border="#ffffff"
+            color="#EBB2AD"
+            ts="none"
+            color='white'
+            hbg="#EBB2AD"
 
-           <ButtonCont>
-                <MainButton className='quizButton' 
-                labeltxt="Find a pup!" 
-                bg="#EBB2AD" 
-                border="#ffffff" 
-                color="white"
-                ts="none"
-                hbg="#EBB2AD"
-                onClick = {
-                    ()=>r.push("/info")
-                }
-                />
+
+            onClick={() => r.push("/tutorial")} />
+            <ButtonCont>
+                <MainButton className='quizButton'
+                    labeltxt="Find a pup!"
+                    bg="#EBB2AD"
+                    border="#ffffff"
+                    color="white"
+                    ts="none"
+                    hbg="#EBB2AD"
+                    onClick={() => r.push("/info")} />
             </ButtonCont>
-        </HomeDiv>
+
+    </HomeDiv>
 }
