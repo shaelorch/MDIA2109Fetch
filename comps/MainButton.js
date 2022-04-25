@@ -22,6 +22,8 @@ box-shadow: 0px 2px 3px #888888;
     background-color: ${props=>props.hoverbackground};
     color: ${props=>props.hovercolor};
     border: ${props=>props.hoverborder};
+    -webkit-text-stroke: ${props=>props.hoverstroke};
+
 }
 `
 
@@ -36,6 +38,7 @@ export default function MainButton({
     hbg='#7EA172',
     hc='#FFFFFF',
     hb='5px solid #F8D2CF',
+    hs ='none',
     onClick=()=>{},
 
    
@@ -50,6 +53,7 @@ export default function MainButton({
         hoverbackground={hbg}
         hovercolor={hc}
         hoverborder={hb}
+        hoverstroke={hs}
         >{labeltxt}</FormButton>
     </ButtonCont>
 }

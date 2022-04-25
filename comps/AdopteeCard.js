@@ -15,7 +15,7 @@ const CardImg = styled.img`
 width: 80px;
 height: 80px;
 border-radius: 50%;
-
+object-fit: cover;
 `
 const NameCont = styled.div`
 font-size:48px;

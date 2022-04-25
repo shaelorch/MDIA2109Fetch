@@ -34,6 +34,7 @@ export default function resources(){
         color="#fff"
         ts="0px"
         border="0px"
+        hbg='#EBB2AD'
         />
 
         <MainButton 
@@ -42,6 +43,7 @@ export default function resources(){
         color="#fff"
         ts="0px"
         border="0px"
+        hbg='#EBB2AD'
         />
 
         <MainButton 
@@ -50,6 +52,7 @@ export default function resources(){
         color="#fff"
         ts="0px"
         border="0px"
+        hbg='#EBB2AD'
         />
 
         <MainButton 
@@ -58,6 +61,7 @@ export default function resources(){
         color="#fff"
         ts="0px"
         border="0px"
+        hbg='#EBB2AD'
         />
 
         </ButtonDiv>

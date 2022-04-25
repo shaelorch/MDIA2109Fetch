@@ -24,7 +24,7 @@ export default function results(){
     //check if the max number equates to small/medium/big
     
     //if young
-        content = rs['young'];
+       // content = rs['young'];
 
     return <ResDiv>
         <TopBar />  
@@ -78,26 +78,30 @@ export default function results(){
 
         <AdopteeCard />
 
-        <AdopteeCard />
-
         <MainButton 
-        ts='0px'
-        border='0px'
-        color='#fff'
-        bg='#EBB2AD'
+        ts='2px white'
+        border='7px solid #EBB2AD'
+        color='#EBB2AD'
+        bg='#F8D2CF'
         labeltxt='Find a Pup!'
+        hb='none'
+        hbg='#EBB2AD'
+        hc='none'
+
         onClick = {
             ()=>r.push("/resources")
         }
         />
 
         <MainButton 
-        ts='0px'
-        border='0px'
-        color='#fff'
-        bg='#EBB2AD'
-        labeltxt='Success Stories'
-        mgintop='15px'
+        ts='2px white'
+        border='7px solid #EBB2AD'
+        color='#EBB2AD'
+        bg='#F8D2CF'
+        labeltxt='Success Stories!'
+        hb='none'
+        hbg='#EBB2AD'
+        hc='none'
         />
 
 
