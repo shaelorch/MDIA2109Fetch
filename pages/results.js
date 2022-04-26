@@ -76,7 +76,9 @@ export default function results(){
         size='20px'
         />
 
-        <MatchImage />
+        <MatchImage
+        image={content.img}
+        />
 
         <Header 
         headertext={content.title}
@@ -85,16 +87,16 @@ export default function results(){
         />
 
         <Paragraph
-        labeltxt='"Loyal, Protective, Smart"'
+        labeltxt={content.tagline}
         size='18px'
         />
 
         <IconInfo 
-        text='$200/month'
+        text={content.cost}
         />
 
         <IconInfo 
-        text='1hr exercise/day'
+        text={content.time}
         image='/clock-icon.svg'
         />
 
