@@ -41,7 +41,9 @@ export default function Questions(){
         labeltxt={qs[qnum].question}
         size='20px' 
         align='center'/>
+
 {
+
         qs[qnum].choices.map((o, i )=> 
         <ButtonCont>
           <MainButton
@@ -63,7 +65,7 @@ export default function Questions(){
           o.small,
           o.medium,
           o.large
-        )}
+          )}
         /></ButtonCont> 
         )
       }
