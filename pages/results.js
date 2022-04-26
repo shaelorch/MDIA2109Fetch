@@ -139,6 +139,10 @@ export default function results(){
         hb='none'
         hbg='#EBB2AD'
         hc='none'
+
+        onClick = {
+            ()=>r.push("/gallery")
+        }
         />
 
 
