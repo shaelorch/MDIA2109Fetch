@@ -3,6 +3,7 @@ import Hamburger from './Hamburger.js';
 import Logo from './Logo.js';
 import Menu from './Menu.js';
 import {useState} from 'react';
+import { useRouter } from 'next/router';
 
 
 const BarCont = styled.div `
@@ -12,6 +13,7 @@ justify-content: space-between;
 
 const MenuDiv = styled.div`
     display: ${props=>props.d};
+    
 `
 
 
