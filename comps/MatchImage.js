@@ -12,12 +12,12 @@ border-radius: 20px;
 margin-top: 20px;
 object-fit: cover;
 `
-const SvgCont = styled.img `
-position: absolute;
-width: 320px;
-height= 260px;
-margin-top:10px;
-`
+// const SvgCont = styled.img `
+// width: 320px;
+// position: absolute;
+// height= 260px;
+// position:
+// `
 
 export default function MatchImage({
     image='/dog.jpeg',
@@ -25,6 +25,6 @@ export default function MatchImage({
 }){
     return <MatchCont>
          <ImgCont src={image}/>
-         <SvgCont src={svg}/>
+         {/* <SvgCont src={svg}/> */}
     </MatchCont>
 }
