@@ -9,6 +9,7 @@ import AdopteeCard from '../comps/AdopteeCard.js';
 import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
 import {getResults} from '../comps/data/que_content';
+import {rs} from '../comps/data/res_content';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
@@ -17,44 +18,44 @@ background-color:#f0f4e4;
 export default function results(){
     const r = useRouter()
     const results = getResults();
-    var content;
+    var content = 
 
     console.log(results);
     const maxAge = Math.max(results.young, results.adult, results.senior)
+
+    const maxSize= Math.max(results.small, results.medium, results.large)
 
     console.log("age", maxAge)
     var key = "";
 
     if(maxAge === results.young){
-        //young
         key="young"
     }
 
     if(maxAge === results.adult){
-        //adult
         key="adult"
     }
 
     if(maxAge === results.senior){
-        //senior
         key="senior"
     }
-    
-
 
     if(maxSize === results.small){
         key+="small"
     }
 
-    content = rs[key]
-    //get the max number with Math.max
+    if(maxSize === results.medium){
+        key+="medium"
+    }
 
-    //check if the max number equates to young/adult/
-    
-    //check if the max number equates to small/medium/big
-    
-    //if young
-       // content = rs['young'];
+    if(maxSize === results.large){
+        key+="large"
+    }
+
+
+
+    content = rs[key]
+
 
     return <ResDiv>
         <TopBar />  
