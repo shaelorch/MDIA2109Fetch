@@ -7,13 +7,7 @@ width: 258px;
 height: 469;
 position: absolute;
 top: 2%;
-right:2rem;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-border: none;
-cursor: pointer;
-padding: 0;
+right:50px;
 `
 
 const MenuLabel = styled.div`

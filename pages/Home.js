@@ -54,7 +54,7 @@ export default function Home(){
         </TitleCont>
         <MainLogo />
         <ParaCont>
-            <Paragraph className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!" />
+            <Paragraph align="center" className="pp" labeltxt="Fetch is a web app that connects you with your perfect dog from a rescue center!" />
         </ParaCont>
         <MainButton className="tutbut"
             labeltxt="Tutorial"
