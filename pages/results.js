@@ -8,6 +8,7 @@ import CircleButtonRight from '../comps/CircleButtonRight.js';
 import AdopteeCard from '../comps/AdopteeCard.js';
 import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
+import {getResults} from '../comps/data/que_content';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
@@ -15,8 +16,37 @@ background-color:#f0f4e4;
 
 export default function results(){
     const r = useRouter()
+    const results = getResults();
     var content;
+
+    console.log(results);
+    const maxAge = Math.max(results.young, results.adult, results.senior)
+
+    console.log("age", maxAge)
+    var key = "";
+
+    if(maxAge === results.young){
+        //young
+        key="young"
+    }
+
+    if(maxAge === results.adult){
+        //adult
+        key="adult"
+    }
+
+    if(maxAge === results.senior){
+        //senior
+        key="senior"
+    }
     
+
+
+    if(maxSize === results.small){
+        key+="small"
+    }
+
+    content = rs[key]
     //get the max number with Math.max
 
     //check if the max number equates to young/adult/
@@ -44,7 +74,7 @@ export default function results(){
         <MatchImage />
 
         <Header 
-        headertext='Large Adult Dog'
+        headertext={content.title}
         size='48px'
         colour='#7EA172'
         />

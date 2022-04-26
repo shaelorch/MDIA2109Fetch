@@ -133,5 +133,9 @@ export function changeResults(
 
 }
 
+export function getResults(){
+    return results;
+}
+
 
     
