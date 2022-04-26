@@ -41,11 +41,14 @@ export default function Menu({
 
 //onCloseClick
 }){
+
+    const r = useRouter();
+
     return <MenuCont>
         <MenuExit onClick={onCloseClick}>
              <img height={imgsize} src="/exit-icon.svg"/></MenuExit>
         <MenuIcon> <img height={imgsize} src="/heart-home-icon.svg" /></MenuIcon>
-        <MenuLabel> Home </MenuLabel>
+        <MenuLabel onClick={()=>r.push("/Home")}> Home </MenuLabel>
         <MenuIcon> <img height="20px" src="/tutorial.svg" /></MenuIcon>
         <MenuLabel href="/tutorial"> Tutorial</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/about.svg" /></MenuIcon>

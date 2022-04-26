@@ -18,7 +18,6 @@ background-color:#f0f4e4;
 export default function results(){
     const r = useRouter()
     const results = getResults();
-    var content = 
 
     console.log(results);
     const maxAge = Math.max(results.young, results.adult, results.senior)
@@ -54,7 +53,12 @@ export default function results(){
 
 
 
-    content = rs[key]
+    var content = rs[key]
+
+    console.log("key", key)
+    if(content === undefined){
+        return <div>I can't find it</div>
+    }
 
 
     return <ResDiv>
