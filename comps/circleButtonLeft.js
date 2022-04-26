@@ -7,9 +7,13 @@ const CirButton = styled.button `
 width: 50px;
 height: 50px;
 border-radius: 50px;
-border: 7px solid #97D4FF;
+border:7px solid #B6E1FF;
 background: #D6EEFF;
 margin: 10px;
+&:hover{
+    background: #D6EEFF;
+    border: 7px solid #97D4FF;
+}
 `
 const ArrowCont = styled.div `
 display: flex;

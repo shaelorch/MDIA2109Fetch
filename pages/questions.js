@@ -10,6 +10,7 @@ import { qs, changeResults } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
 
 
+
 const BackgroundDiv = styled.div `
 background-image: linear-gradient(#D6EEFF, #D6EEC9)
 `
@@ -42,7 +43,8 @@ export default function Questions(){
         align='center'/>
 {
         qs[qnum].choices.map((o, i )=> 
-        <ButtonCont><MainButton
+        <ButtonCont>
+          <MainButton
         labeltxt={o.txt}
         bg='#D6EEC9'
         color='#7EA172'
@@ -52,6 +54,8 @@ export default function Questions(){
         hc='white'
         hbg='#7EA172'
 
+    
+      
         onClick={()=> changeResults(
           o.young,
           o.adult,
@@ -60,7 +64,8 @@ export default function Questions(){
           o.medium,
           o.large
         )}
-        /></ButtonCont> )
+        /></ButtonCont> 
+        )
       }
 
    <BottomCont>

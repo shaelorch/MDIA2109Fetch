@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const ButtonCont = styled.div`
 display:flex;
 justify-content: center;
@@ -40,6 +41,7 @@ export default function MainButton({
     hb='5px solid #F8D2CF',
     hs ='none',
     onClick=()=>{},
+
 
    
 }){
