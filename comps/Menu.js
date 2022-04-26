@@ -5,11 +5,15 @@ const MenuCont = styled.div`
 background-color: #D6EEFF;
 width: 258px;
 height: 469;
+position: absolute;
+top: 2%;
+right:2rem;
 display: flex;
-position:absolute;
-top: 20px;
-left:230px;
 flex-direction: column;
+justify-content: space-around;
+border: none;
+cursor: pointer;
+padding: 0;
 `
 
 const MenuLabel = styled.div`
