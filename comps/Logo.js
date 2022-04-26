@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 
 const LogoCont = styled.div `
@@ -12,9 +13,11 @@ export default function Logo ({
     imgsize='50px',
     
 }){
+    const r = useRouter();
+
     return (
     <LogoCont>
-        <img height={imgsize} src={imgtype} />
+        <img onClick={()=>r.push("/Home")} height={imgsize} src={imgtype} />
     </LogoCont>
     )
 }

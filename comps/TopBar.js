@@ -3,7 +3,7 @@ import Hamburger from './Hamburger.js';
 import Logo from './Logo.js';
 import Menu from './Menu.js';
 import {useState} from 'react';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 
 
 const BarCont = styled.div `
@@ -18,13 +18,14 @@ const MenuDiv = styled.div`
 
 
 export default function TopBar(){
+
     
     const [disp, setDisp] = useState("none");
 
-    return <><BarCont>
-        <Logo>
+    const r = useRouter();
 
-        </Logo>
+    return <><BarCont>
+        <Logo></Logo>
 
         <Hamburger onClick={
             ()=>setDisp("block")

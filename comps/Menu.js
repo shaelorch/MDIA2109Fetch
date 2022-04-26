@@ -50,16 +50,16 @@ export default function Menu({
         <MenuIcon> <img height={imgsize} src="/heart-home-icon.svg" /></MenuIcon>
         <MenuLabel onClick={()=>r.push("/Home")}> Home </MenuLabel>
         <MenuIcon> <img height="20px" src="/tutorial.svg" /></MenuIcon>
-        <MenuLabel href="/tutorial"> Tutorial</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/tutorial")}> Tutorial</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/about.svg" /></MenuIcon>
-        <MenuLabel href="/info"> About Us</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/info")}> About Us</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/find.svg" /></MenuIcon>
-        <MenuLabel href="/"> Find a Pup</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/questions")}> Find a Pup</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/dog.svg" /></MenuIcon>
-        <MenuLabel href="/resources"> Dog Rescues</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/resources")}> Dog Rescues</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/testimonials.svg" /></MenuIcon>
-        <MenuLabel href="/"> Testimonials</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/gallery")}> Testimonials</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/learn.svg" /></MenuIcon>
-        <MenuLabel href="/info"> Learn More</MenuLabel>
+        <MenuLabel onClick={()=>r.push("")}> Learn More</MenuLabel>
     </MenuCont>
 }
