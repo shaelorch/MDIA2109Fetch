@@ -8,6 +8,8 @@ import CircleButtonRight from '../comps/CircleButtonRight.js';
 import AdopteeCard from '../comps/AdopteeCard.js';
 import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
+import {getResults} from '../comps/data/que_content';
+import {rs} from '../comps/data/res_content';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
@@ -15,16 +17,45 @@ background-color:#f0f4e4;
 
 export default function results(){
     const r = useRouter()
-    var content;
-    
-    //get the max number with Math.max
+    const results = getResults();
+    var content = 
 
-    //check if the max number equates to young/adult/
-    
-    //check if the max number equates to small/medium/big
-    
-    //if young
-       // content = rs['young'];
+    console.log(results);
+    const maxAge = Math.max(results.young, results.adult, results.senior)
+
+    const maxSize= Math.max(results.small, results.medium, results.large)
+
+    console.log("age", maxAge)
+    var key = "";
+
+    if(maxAge === results.young){
+        key="young"
+    }
+
+    if(maxAge === results.adult){
+        key="adult"
+    }
+
+    if(maxAge === results.senior){
+        key="senior"
+    }
+
+    if(maxSize === results.small){
+        key+="small"
+    }
+
+    if(maxSize === results.medium){
+        key+="medium"
+    }
+
+    if(maxSize === results.large){
+        key+="large"
+    }
+
+
+
+    content = rs[key]
+
 
     return <ResDiv>
         <TopBar />  
@@ -44,7 +75,7 @@ export default function results(){
         <MatchImage />
 
         <Header 
-        headertext='Large Adult Dog'
+        headertext={content.title}
         size='48px'
         colour='#7EA172'
         />

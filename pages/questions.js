@@ -73,13 +73,32 @@ export default function Questions(){
    <BottomCont>
 
  { 
-    Number(qnum) < qs.length +4 && 
+    Number(qnum) < qs.length -1 && 
     <NextandBack onClickNext={
       ()=>r.push({
         pathname:"/questions",
         query: {
           qnum:(Number(qnum)+1 >= qs.length) ? qs.length -1 : Number(qnum) +1
         }
+      })
+    }
+
+    onClickBack={
+      ()=>r.push({
+        pathname:"/questions",
+        query: {
+          qnum:(Number(qnum)-1 > 0) ? Number(qnum) -1 : 0
+        }
+      })
+    }
+    ></NextandBack>
+  }
+
+{ 
+    Number(qnum) >= qs.length -1 && 
+    <NextandBack onClickNext={
+      ()=>r.push({
+        pathname:"/results"
       })
     }
 

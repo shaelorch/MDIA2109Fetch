@@ -51,9 +51,6 @@ export default function AdopteeCard({
     </HeaderCont>
     <BottomCont>
     <Paragraph size='18px' labeltxt='Write a blurb about the dog here...' />
-    <CircleCont>
-       <CircleButtonRight deg='rotate(90deg)' hgt='30px' wid='30px' border='0px' colour='#EBB2AD'/>
-    </CircleCont>
     </BottomCont>
   </AdopteeCont>
 }

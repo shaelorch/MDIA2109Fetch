@@ -46,12 +46,7 @@ export default function Home(){
 
     return <HomeDiv>
 
-        <HbCont>
-            <Hamburger onClick={()=>setDisp("block")} />
-        </HbCont>
-        <MenuDiv d={disp}>
-            <Menu onCloseClick={()=>setDisp("none")} />
-        </MenuDiv>
+       <TopBar />
         
         <TitleCont>
             <Header
