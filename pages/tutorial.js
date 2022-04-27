@@ -8,7 +8,6 @@ import {useRouter} from 'next/router';
 
 const TutDiv = styled.div`
 background-color:#D6EEFF;
-
 `
 const HamDiv = styled.div`
 position: absolute;
@@ -38,6 +37,7 @@ export default function tutorial(){
     <Paragraph
     labeltxt='We will ask you four questions about yourself'
     size='18px'
+    align='center'
     />
     </PText>
      <CircleHeader 
@@ -47,6 +47,7 @@ export default function tutorial(){
     <Paragraph
     labeltxt='Choose the answer that best describes you'
     size='18px'
+    align='center'
     />
     </PText>
      <CircleHeader 
@@ -56,6 +57,7 @@ export default function tutorial(){
     <Paragraph
     labeltxt='Click the “Fetch Your Pup” button to find out what dog is best for you '
     size='18px'
+    align='center'
     />
     </PText>
      <CircleHeader 
@@ -65,6 +67,7 @@ export default function tutorial(){
     <Paragraph
     labeltxt='After you receive your results, find out more and discover resources about being a responsible pet owner!'
     size='18px'
+    align='center'
     />
     </PText>
      <CircleHeader 
@@ -74,6 +77,7 @@ export default function tutorial(){
     <Paragraph
     labeltxt='Let’s begin! Click to start!'
     size='18px'
+    align='center'
     />
     </PText>
 
