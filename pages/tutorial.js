@@ -9,10 +9,8 @@ import {useRouter} from 'next/router';
 const TutDiv = styled.div`
 background-color:#D6EEFF;
 `
-const HamDiv = styled.div`
-position: absolute;
-top: 0px;
-right:0px;
+const ButtonDiv = styled.div`
+margin-bottom: 20px;
 `
 
 const PText = styled.div`
@@ -81,20 +79,23 @@ export default function tutorial(){
     />
     </PText>
 
-    <MainButton
-    labeltxt='Next'
-    bg='#F8D2CF'
-    color='#EBB2AD'
-    border='5px solid #EBB2AD'
-    ts = '2px white'
-    hbg = '#EBB2AD'
-    hb='none'
+    <ButtonDiv>
+      <MainButton
+      labeltxt='Next'
+      bg='#F8D2CF'
+      color='#EBB2AD'
+      border='5px solid #EBB2AD'
+      ts = '2px white'
+      hbg = '#EBB2AD'
+      hb='none'
 
 
-    onClick = {
-      ()=>r.push("/questions")
-    }
-    />
+      onClick = {
+        ()=>r.push("/questions")
+      }
+      />
+    </ButtonDiv>
+
     
   </TutDiv>
 }

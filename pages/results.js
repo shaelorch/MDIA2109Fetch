@@ -119,6 +119,7 @@ export default function results(){
         <AdopteeCard
         headertxt='Rocky, 7'
         text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
+        image='https://placedog.net/400'
         />
 
         <MainButton 

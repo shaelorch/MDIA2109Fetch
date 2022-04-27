@@ -5,6 +5,7 @@ const ButtonCont = styled.div`
 display:flex;
 justify-content: center;
 margin-top: 25px;
+margin-bottom: 10px;
 `
 
 const FormButton = styled.button`
