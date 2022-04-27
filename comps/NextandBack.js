@@ -9,12 +9,12 @@ margin-top: 20px;
 `
 const Left = styled.div`
 position: fixed;
-bottom: 50px;
+bottom: 460px;
 left: 50px;
 `
 const Right = styled.div`
 position: fixed;
-bottom: 50px;
+bottom: 460px;
 right: 50px;
 `
 
