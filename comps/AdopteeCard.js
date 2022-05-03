@@ -42,6 +42,7 @@ align-self:flex-end;
 export default function AdopteeCard({
   image='https://placedog.net/500',
   headertxt='Name, #',
+  text='write something,'
 }){
 
   return <AdopteeCont>
@@ -50,7 +51,7 @@ export default function AdopteeCard({
     <NameCont>{headertxt}</NameCont>
     </HeaderCont>
     <BottomCont>
-    <Paragraph size='18px' labeltxt='Write a blurb about the dog here...' />
+    <Paragraph size='18px' labeltxt={text} />
     </BottomCont>
   </AdopteeCont>
 }

@@ -81,7 +81,7 @@ export const qs = [
     },
     {
         title:"4. Daily Activity",
-        question:"Are you willing to spend 30mins or more walking your dog?",
+        question:"Are you willing to spend 45mins or more walking your dog?",
         choices: [{
             txt: "Yes",
             senior: 1,

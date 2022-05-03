@@ -57,7 +57,7 @@ export default function results(){
 
     console.log("key", key)
     if(content === undefined){
-        return <div>I can't find it</div>
+        return <div>sorry</div>
     }
 
 
@@ -111,9 +111,16 @@ export default function results(){
         colour='#97D4FF'
         />
 
-        <AdopteeCard />
+        <AdopteeCard
+        headertxt='Daisy, 5'
+        text='Daisy was found in an abandoned home with a litter of pups next to her.'
+        />
 
-        <AdopteeCard />
+        <AdopteeCard
+        headertxt='Rocky, 7'
+        text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
+        image='https://placedog.net/400'
+        />
 
         <MainButton 
         ts='2px white'
@@ -139,6 +146,10 @@ export default function results(){
         hb='none'
         hbg='#EBB2AD'
         hc='none'
+
+        onClick = {
+            ()=>r.push("/gallery")
+        }
         />
 
 
