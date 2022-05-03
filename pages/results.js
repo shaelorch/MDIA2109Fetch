@@ -10,7 +10,7 @@ import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
 import {getResults} from '../comps/data/que_content';
 import {rs} from '../comps/data/res_content';
-import { fadeIn, fadeOut, bounceIn, wiggleIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
+import { fadeIn, wiggleIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
 
 
 const ResDiv = styled.div`

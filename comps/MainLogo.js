@@ -1,5 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-import { fadeIn, fadeOut, bounceIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
+import { bounceIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
 
 
 
