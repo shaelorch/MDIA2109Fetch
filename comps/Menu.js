@@ -50,7 +50,7 @@ export default function Menu({
         <MenuExit onClick={onCloseClick}>
              <img height={imgsize} src="/exit-icon.svg"/></MenuExit>
         <MenuIcon> <img height={imgsize} src="/heart-home-icon.svg" /></MenuIcon>
-        <MenuLabel onClick={()=>r.push("/Home")}> Home </MenuLabel>
+        <MenuLabel onClick={()=>r.push("/")}> Home </MenuLabel>
         <MenuIcon> <img height="20px" src="/tutorial.svg" /></MenuIcon>
         <MenuLabel onClick={()=>r.push("/tutorial")}> Tutorial</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/about.svg" /></MenuIcon>

@@ -5,6 +5,7 @@ import { bounceIn } from '../comps/data/animation.js';
 
 const LogoCont = styled.div `
 display: flex;
+position:relatie;
 justify-content: center;
 
 `;
@@ -13,7 +14,7 @@ justify-content: center;
 
 const LogoImg = styled.img`
    animation:${bounceIn} 2s;
-   animation-iteration-count: 10;
+   animation-iteration-count: 3;
     
     
 `
