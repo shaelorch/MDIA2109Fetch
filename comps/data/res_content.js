@@ -64,8 +64,8 @@ export const rs = {
             time: '1hr/day',
             adoptees: [{
                 img:'/my1.jpg',
-                name:'Cali, 7months',
-                desc:'Cali is a trooper. Cali was rescued from a breeding facility where she gave birth to 28 litters.',
+                name:'Cali, 1',
+                desc:'Cali is a trooper. Cali was rescued from a breeding facility.',
             },
             {
                 img:'/my2.jpg',

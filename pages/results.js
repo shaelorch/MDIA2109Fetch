@@ -21,9 +21,9 @@ animation:${fadeIn} 3s;
 const AnimeDiv = styled.div`
 animation:${wiggleIn} 1s;
 animation-iteration-count: 10;
-`
-const AnimeDivTwo = styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 
 
@@ -123,6 +123,7 @@ export default function results(){
         colour='#97D4FF'
         />
 
+        <AnimeDiv> 
         {
             content.adoptees.map((o,i)=><AdopteeCard
                 image={o.img}
@@ -130,14 +131,14 @@ export default function results(){
                 text={o.desc}
             />)
         }
-
+        </AnimeDiv>
 
         <MainButton 
-        ts='2px white'
+        ts='0px'
         border='7px solid #EBB2AD'
-        color='#EBB2AD'
+        color='#FFFFFF'
         bg='#F8D2CF'
-        labeltxt='Find a Pup!'
+        labeltxt='Find a Shelter'
         hb='none'
         hbg='#EBB2AD'
         hc='none'
@@ -148,9 +149,9 @@ export default function results(){
         />
 
         <MainButton 
-        ts='2px white'
+        ts='0px'
         border='7px solid #EBB2AD'
-        color='#EBB2AD'
+        color='#FFFFFF'
         bg='#F8D2CF'
         labeltxt='Success Stories!'
         hb='none'

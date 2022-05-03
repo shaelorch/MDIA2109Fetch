@@ -8,6 +8,7 @@ import {useRouter} from 'next/router';
 
 const TutDiv = styled.div`
 background-color:#D6EEFF;
+height: 1000px;
 `
 const ButtonDiv = styled.div`
 margin-bottom: 20px;
@@ -83,9 +84,9 @@ export default function tutorial(){
       <MainButton
       labeltxt='Next'
       bg='#F8D2CF'
-      color='#EBB2AD'
+      color='#FFFFFF'
       border='5px solid #EBB2AD'
-      ts = '2px white'
+      ts = '0px'
       hbg = '#EBB2AD'
       hb='none'
 
