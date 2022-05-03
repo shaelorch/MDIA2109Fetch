@@ -69,7 +69,7 @@ export default function Home(){
             onClick={() => r.push("/tutorial")} />
             <ButtonCont>
                 <MainButton className='quizButton'
-                    labeltxt="Find a pup!"
+                    labeltxt="Start"
                     bg="#EBB2AD"
                     border="#ffffff"
                     color="white"
