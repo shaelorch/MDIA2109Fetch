@@ -111,6 +111,11 @@ export default function results(){
         colour='#97D4FF'
         />
 
+        {
+            content.adoptees.map((o,i)=><AdopteeCard
+                image={o.img}
+            />)
+        }
         <AdopteeCard
         headertxt='Daisy, 5'
         text='Daisy was found in an abandoned home with a litter of pups next to her.'
