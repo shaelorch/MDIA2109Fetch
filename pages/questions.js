@@ -11,7 +11,9 @@ import { useRouter } from 'next/router';
 
 
 const BackgroundDiv = styled.div `
-background-image: linear-gradient(#D6EEFF, #D6EEC9)
+background-image:url("/background.svg");
+height: auto;
+width: 100%;
 `
 
 const ButtonCont = styled.div `
