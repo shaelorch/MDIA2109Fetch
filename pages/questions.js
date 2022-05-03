@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import TopBar from '../comps/TopBar';
 import Header from '../comps/Header';
-import MainButton from '../comps/MainButton';
-import QueCircle from '../comps/QueCircle';
+import QButton from '../comps/QuestionButton';
 import Paragraph from '../comps/Paragraph';
 import Progress from '../comps/Progressbar';
 import NextandBack from '../comps/NextandBack';
@@ -12,7 +11,9 @@ import { useRouter } from 'next/router';
 
 
 const BackgroundDiv = styled.div `
-background-image: linear-gradient(#D6EEFF, #D6EEC9)
+background-image:url("/background.svg");
+height: auto;
+width: 100%;
 `
 
 const ButtonCont = styled.div `
@@ -48,15 +49,8 @@ export default function Questions(){
 
         qs[qnum].choices.map((o, i )=> 
         <ButtonCont>
-          <MainButton
+          <QButton
         labeltxt={o.txt}
-        bg='#D6EEC9'
-        color='#7EA172'
-        border='5px solid #7EA172'
-        ts = 'none'
-        hb='none'
-        hc='white'
-        hbg='#7EA172'
 
     
       

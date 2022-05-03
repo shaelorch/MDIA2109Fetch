@@ -136,6 +136,15 @@ export default function results(){
             />
         </AnimeDiv>
 
+        {
+            content.adoptees.map((o,i)=><AdopteeCard
+                image={o.img}
+                headertxt={o.name}
+                text={o.desc}
+            />)
+        }
+
+
         <MainButton 
         ts='2px white'
         border='7px solid #EBB2AD'
