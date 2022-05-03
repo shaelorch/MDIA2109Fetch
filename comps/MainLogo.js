@@ -1,9 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-import { bounceIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
-
-
-
-
+import { bounceIn } from '../comps/data/animation.js';
 
 
 
