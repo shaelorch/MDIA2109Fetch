@@ -39,7 +39,7 @@ const comp_data = {
 
 export default function QButton({
     labeltxt='Yes',
-    notclicked = false,
+    clicked = false,
     onClick=()=>{}
 }){
 
