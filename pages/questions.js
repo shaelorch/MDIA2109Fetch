@@ -30,7 +30,9 @@ export default function Questions(){
   }
   return <BackgroundDiv>
     <TopBar />
-    <Progress />  
+    <Progress
+    imgtype={qs[qnum].image}
+    />  
       <Header
        headertext={qs[qnum].title}
        size='50px'/>

@@ -8,19 +8,31 @@ import {useRouter} from 'next/router';
 
 const TextDiv = styled.div`
 border-radius: 20px;
+display:flex;
 margin: 5px;
-margin-left: 25px;
-padding:20px;
-width: 350px;
+margin-left: 15px;
+padding:15px;
+width: 370px;
 height:auto;
 background-color: #FFF;
+align-self: center;
 `
+
+const BigDiv = styled.div`
+display:flex;
+margin-left: 5px;
+padding:15px;
+width: 390px;
+height:auto;
+align-self: center;
+`
+
 const PDiv = styled.div`
-margin: 20px;
+margin: 40px;
 `
 const InfoDiv = styled.div`
 background-color: #D6EEFF;
-height: 900px;
+height: 800px;
 `
 const ButtonDiv = styled.div`
 margin-bottom: 20px;
@@ -38,12 +50,21 @@ export default function info(){
             headertext='Our Mission'
         />
 
+        <BigDiv>
+            <Paragraph
+            size='18px'
+            weight='bold'
+            align='center'
+            labeltxt='Approximately 390,000 dogs are euthanized each year from shelters due to the careless overbreeding of these animals.'
+            />
+        </BigDiv>
+
         <TextDiv>
             <Paragraph
             size='18px'
             weight='bold'
             align='center'
-            labeltxt='Approximately 390,000 dogs are euthanized each years from shelters due to the careless overbreeding of these animals. Many people still support these backyard breeders and puppy mills who are directly contributing. Use this app to answer the lifestyle questions and find a shelter pup who needs a forever home!'
+            labeltxt='Use this app to answer the lifestyle questions and find a shelter pup who needs a forever home!'
             />
         </TextDiv>
 

@@ -2,22 +2,30 @@ import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
 const MenuCont = styled.div`
-background-color: #D6EEFF;
+background-color: #FFFFFF;
 width: 258px;
 height: 469;
 position: absolute;
-top: 2%;
-right:50px;
+top: 0%;
+right:0rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+border: none;
+cursor: pointer;
+padding: 20px;
 `
 
 const MenuLabel = styled.div`
 font-size: 25px;
 font-family: 'Nunito', sans-serif;
-font-weight: ;
 color: #502419;
 position: relative;
 left: 50px;
 bottom: 40px;
+&:hover{
+    color: #EBB2AD;
+}
 `
 
 const MenuIcon = styled.div`
@@ -48,7 +56,7 @@ export default function Menu({
         <MenuIcon> <img height={imgsize} src="/about.svg" /></MenuIcon>
         <MenuLabel onClick={()=>r.push("/info")}> About Us</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/find.svg" /></MenuIcon>
-        <MenuLabel onClick={()=>r.push("/questions")}> Find a Pup</MenuLabel>
+        <MenuLabel onClick={()=>r.push("/questions")}> Take the Quiz</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/dog.svg" /></MenuIcon>
         <MenuLabel onClick={()=>r.push("/resources")}> Dog Rescues</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/testimonials.svg" /></MenuIcon>
