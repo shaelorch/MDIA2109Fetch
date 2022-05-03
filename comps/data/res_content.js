@@ -45,8 +45,8 @@ export const rs = {
             time: '30mins/day',
             adoptees: [{
                 img:'/ss1.jpg',
-                name:'Cucaracha, 12',
-                desc:'Cucaracha is a loving and gentle girl. She was rescued from a dog fighting ring. She has since turned feral.',
+                name:'Cuca, 12',
+                desc:'Cuca is a loving and gentle girl. She was rescued from a dog fighting ring. She has since turned feral.',
             },
             {
                 img:'/ss2.jpg',

@@ -10,7 +10,7 @@ import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
 import {getResults} from '../comps/data/que_content';
 import {rs} from '../comps/data/res_content';
-import { fadeIn, wiggleIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
+import { fadeIn, wiggleIn } from '../comps/data/animation.js';
 
 
 const ResDiv = styled.div`
@@ -122,19 +122,6 @@ export default function results(){
         size='50px'
         colour='#97D4FF'
         />
-        <AnimeDiv>
-            <AdopteeCard
-            headertxt='Daisy, 5'
-            text='Daisy was found in an abandoned home with a litter of pups next to her.'
-            />
-        </AnimeDiv>
-        <AnimeDiv>
-            <AdopteeCard
-            headertxt='Rocky, 7'
-            text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
-            image='https://placedog.net/400'
-            />
-        </AnimeDiv>
 
         {
             content.adoptees.map((o,i)=><AdopteeCard
