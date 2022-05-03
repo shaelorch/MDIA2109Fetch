@@ -6,15 +6,13 @@ export const rs = {
         cost: '$500/month',
         time: '40mins/day',
         adoptees: [{
-            img:0,
+            img:'https://placedog.net/500',
             name:0,
-            age:0,
             desc:0,
         },
         {
-            img:0,
+            img:'https://placedog.net/400',
             name:0,
-            age:0,
             desc:0,
         }
         ]
@@ -27,15 +25,13 @@ export const rs = {
         cost: '$200/month',
         time: '40mins/day',
         adoptees: [{
-            img:0,
+            img:'https://placedog.net/300',
             name:0,
-            age:0,
             desc:0,
         },
         {
-            img:0,
+            img:'https://placedog.net/600',
             name:0,
-            age:0,
             desc:0,
         }
         ]
@@ -48,15 +44,13 @@ export const rs = {
             cost: '$800/month',
             time: '30mins/day',
             adoptees: [{
-                img:0,
+                img:'https://placedog.net/700',
                 name:0,
-                age:0,
                 desc:0,
             },
             {
-                img:0,
+                img:'https://placedog.net/900',
                 name:0,
-                age:0,
                 desc:0,
             }
             ]
@@ -69,15 +63,13 @@ export const rs = {
             cost: '$400/month',
             time: '1hr/day',
             adoptees: [{
-                img:0,
+                img:'https://placedog.net/800',
                 name:0,
-                age:0,
                 desc:0,
             },
             {
-                img:0,
+                img:'https://placedog.net/100',
                 name:0,
-                age:0,
                 desc:0,
             }
             ]
@@ -92,13 +84,11 @@ export const rs = {
             adoptees: [{
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             },
             {
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             }
             ]
@@ -113,13 +103,11 @@ export const rs = {
             adoptees: [{
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             },
             {
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             }
             ]
@@ -134,13 +122,11 @@ export const rs = {
             adoptees: [{
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             },
             {
                 img:0,
                 name:0,
-                age:0,
                 desc:0,
             }
             ]
@@ -155,13 +141,11 @@ export const rs = {
                 adoptees: [{
                     img:0,
                     name:0,
-                    age:0,
                     desc:0,
                 },
                 {
                     img:0,
                     name:0,
-                    age:0,
                     desc:0,
                 }
                 ]
@@ -176,13 +160,11 @@ export const rs = {
                 adoptees: [{
                     img:0,
                     name:0,
-                    age:0,
                     desc:0,
                 },
                 {
                     img:0,
                     name:0,
-                    age:0,
                     desc:0,
                 }
                 ]
