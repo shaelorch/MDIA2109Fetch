@@ -44,13 +44,14 @@ export default function QButton({
 }){
 
     const [c_state, setCstate] = useState("notclicked");
+
     useEffect(()=>{
-        if(notclicked){
+        if(clicked){
           setCstate("clicked");
         }else{
           setCstate("notclicked");
         }
-      }, [notclicked]);
+      }, [clicked]);
 
 
     useEffect(()=>{
@@ -68,6 +69,9 @@ export default function QButton({
         <FormButton
         bg={comp_data[c_state].buttonbg}
         color={comp_data[c_state].buttoncolor}
+        onClick={
+            ()=>setCstate(c_state === "notclicked" ? "clicked" : "notclicked")
+        }
         >{labeltxt}</FormButton>
     </ButtonCont>
 }

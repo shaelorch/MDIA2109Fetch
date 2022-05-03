@@ -1,3 +1,4 @@
+
 export const qs = [
     {
         image: '/1stpage.svg',
