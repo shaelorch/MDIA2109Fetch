@@ -122,15 +122,17 @@ export default function results(){
         size='50px'
         colour='#97D4FF'
         />
+        
 
-        {
-            content.adoptees.map((o,i)=><AdopteeCard
-                image={o.img}
-                headertxt={o.name}
-                text={o.desc}
-            />)
-        }
-
+        <AnimeDiv>
+            {
+                content.adoptees.map((o,i)=><AdopteeCard
+                    image={o.img}
+                    headertxt={o.name}
+                    text={o.desc}
+                />)
+            }
+        </AnimeDiv>
 
         <MainButton 
         ts='2px white'
