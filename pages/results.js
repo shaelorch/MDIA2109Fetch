@@ -114,18 +114,11 @@ export default function results(){
         {
             content.adoptees.map((o,i)=><AdopteeCard
                 image={o.img}
+                headertxt={o.name}
+                text={o.desc}
             />)
         }
-        <AdopteeCard
-        headertxt='Daisy, 5'
-        text='Daisy was found in an abandoned home with a litter of pups next to her.'
-        />
 
-        <AdopteeCard
-        headertxt='Rocky, 7'
-        text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
-        image='https://placedog.net/400'
-        />
 
         <MainButton 
         ts='2px white'
