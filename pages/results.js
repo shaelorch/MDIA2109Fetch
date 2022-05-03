@@ -10,10 +10,22 @@ import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
 import {getResults} from '../comps/data/que_content';
 import {rs} from '../comps/data/res_content';
+import { fadeIn, fadeOut, bounceIn, wiggleIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
+
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
+animation:${fadeIn} 3s;
 `
+
+const AnimeDiv = styled.div`
+animation:${wiggleIn} 1s;
+animation-iteration-count: 10;
+`
+const AnimeDivTwo = styled.div`
+
+`
+
 
 export default function results(){
     const r = useRouter()
@@ -110,17 +122,19 @@ export default function results(){
         size='50px'
         colour='#97D4FF'
         />
-
-        <AdopteeCard
-        headertxt='Daisy, 5'
-        text='Daisy was found in an abandoned home with a litter of pups next to her.'
-        />
-
-        <AdopteeCard
-        headertxt='Rocky, 7'
-        text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
-        image='https://placedog.net/400'
-        />
+        <AnimeDiv>
+            <AdopteeCard
+            headertxt='Daisy, 5'
+            text='Daisy was found in an abandoned home with a litter of pups next to her.'
+            />
+        </AnimeDiv>
+        <AnimeDiv>
+            <AdopteeCard
+            headertxt='Rocky, 7'
+            text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
+            image='https://placedog.net/400'
+            />
+        </AnimeDiv>
 
         <MainButton 
         ts='2px white'

@@ -4,6 +4,7 @@ import Logo from './Logo.js';
 import Menu from './Menu.js';
 import {useState} from 'react';
 import {useRouter} from 'next/router';
+import { fadeIn, fadeOut, bounceIn } from '/Users/slorch/MDIA2109Fetch/comps/data/animation.js';
 
 
 const BarCont = styled.div `
@@ -15,6 +16,9 @@ const MenuDiv = styled.div`
     display: ${props=>props.d};
     
 `
+const LogoDiv = styled.div`
+
+`
 
 
 export default function TopBar(){
@@ -25,7 +29,11 @@ export default function TopBar(){
     const r = useRouter();
 
     return <><BarCont>
-        <Logo></Logo>
+
+        <LogoDiv>
+            <Logo />
+        </LogoDiv>
+        
 
         <Hamburger onClick={
             ()=>setDisp("block")
