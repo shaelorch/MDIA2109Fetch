@@ -102,7 +102,7 @@ export default function info(){
             labeltxt='Tell Me More'
             hbg="#EBB2AD"
             onClick={
-                ()=>r.push("/")
+                ()=>r.push("http://soleildagneau.ca/infographic/")
             }
             />
         </ButtonDiv>
