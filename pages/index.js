@@ -14,7 +14,6 @@ import TopBar from "../comps/TopBar";
 const HomeDiv = styled.div `
     background-image:url("/background.svg")
     
-    
 `;
 
 const ParaCont = styled.div`
