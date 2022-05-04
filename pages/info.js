@@ -16,6 +16,7 @@ width: 370px;
 height:auto;
 background-color: #FFF;
 align-self: center;
+
 `
 
 const BigDiv = styled.div`
@@ -32,7 +33,7 @@ margin: 40px;
 `
 const InfoDiv = styled.div`
 background-color: #D6EEFF;
-height: 800px;
+height:1000px;
 `
 const ButtonDiv = styled.div`
 margin-bottom: 20px;
