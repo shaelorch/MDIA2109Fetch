@@ -62,6 +62,6 @@ export default function Menu({
         <MenuIcon> <img height={imgsize} src="/testimonials.svg" /></MenuIcon>
         <MenuLabel onClick={()=>r.push("/gallery")}> Testimonials</MenuLabel>
         <MenuIcon> <img height={imgsize} src="/learn.svg" /></MenuIcon>
-        <MenuLabel onClick={()=>r.push("")}> Learn More</MenuLabel>
+        <MenuLabel onClick={()=>r.push("http://soleildagneau.ca/infographic/")}> Learn More</MenuLabel>
     </MenuCont>
 }
