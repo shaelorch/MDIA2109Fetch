@@ -10,9 +10,10 @@ import { useRouter } from 'next/router';
 
 
 
+
 const BackgroundDiv = styled.div `
 background-image:url("/background.svg");
-height: auto;
+height: 900px;
 width: 100%;
 `
 
@@ -24,6 +25,7 @@ position: relative;
 margin-top: 220px;
 `
 
+
 export default function Questions(){
   const r = useRouter()
   var {qnum} = r.query;
@@ -32,10 +34,14 @@ export default function Questions(){
   }
   return <BackgroundDiv>
     <TopBar />
+
+   
     <Progress
-    imgtype={qs[qnum].image}
-    />  
-      <Header
+      imgtype={qs[qnum].image}
+      />  
+  
+
+    <Header
        headertext={qs[qnum].title}
        size='50px'/>
 
