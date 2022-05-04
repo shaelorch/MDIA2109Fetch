@@ -10,22 +10,25 @@ const TextDiv = styled.div`
 border-radius: 20px;
 display:flex;
 margin: 5px;
-margin-left: 15px;
+margin-left:100px;
+margin-right:100px;
 padding:15px;
-width: 370px;
+width:auto;
 height:auto;
 background-color: #FFF;
-align-self: center;
+justify-content: center;
 
 `
 
 const BigDiv = styled.div`
 display:flex;
-margin-left: 5px;
+
+margin-left:50px;
+margin-right:50px;
 padding:15px;
-width: 390px;
+width:auto;
 height:auto;
-align-self: center;
+justify-content: center;
 `
 
 const PDiv = styled.div`

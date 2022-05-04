@@ -5,7 +5,6 @@ import { bounceIn } from '../comps/data/animation.js';
 
 const LogoCont = styled.div `
 display: flex;
-position:relatie;
 justify-content: center;
 
 `;
