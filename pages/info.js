@@ -6,6 +6,7 @@ import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
 import {useRouter} from 'next/router';
 
+
 const TextDiv = styled.div`
 border-radius: 20px;
 display:flex;
@@ -106,6 +107,8 @@ export default function info(){
             }
             />
         </ButtonDiv>
+
+      
 
 
         

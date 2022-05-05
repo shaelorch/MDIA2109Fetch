@@ -33,3 +33,12 @@ export const wiggleIn = keyframes`
 100% {-webkit-transform: rotate(0deg);}
 
 `;
+
+export const wiggleInTail = keyframes`
+0% {-webkit-transform: rotate(20deg);}
+25% {-webkit-transform: rotate(-20deg);}
+50% {-webkit-transform: rotate(20deg);}
+75% {-webkit-transform: rotate(-20deg);}
+100% {-webkit-transform: rotate(0deg);}
+
+`;
