@@ -6,25 +6,30 @@ import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
 import {useRouter} from 'next/router';
 
+
 const TextDiv = styled.div`
 border-radius: 20px;
 display:flex;
 margin: 5px;
-margin-left: 15px;
+margin-left:100px;
+margin-right:100px;
 padding:15px;
-width: 370px;
+width:auto;
 height:auto;
 background-color: #FFF;
-align-self: center;
+justify-content: center;
+
 `
 
 const BigDiv = styled.div`
 display:flex;
-margin-left: 5px;
+
+margin-left:50px;
+margin-right:50px;
 padding:15px;
-width: 390px;
+width:auto;
 height:auto;
-align-self: center;
+justify-content: center;
 `
 
 const PDiv = styled.div`
@@ -32,7 +37,7 @@ margin: 40px;
 `
 const InfoDiv = styled.div`
 background-color: #D6EEFF;
-height: 800px;
+height:1000px;
 `
 const ButtonDiv = styled.div`
 margin-bottom: 20px;
@@ -98,10 +103,12 @@ export default function info(){
             labeltxt='Tell Me More'
             hbg="#EBB2AD"
             onClick={
-                ()=>r.push("/")
+                ()=>r.push("http://soleildagneau.ca/infographic/")
             }
             />
         </ButtonDiv>
+
+      
 
 
         

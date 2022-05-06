@@ -5,9 +5,11 @@ import Paragraph from '../comps/Paragraph';
 import MainButton from '../comps/MainButton';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import TailWag from '../comps/tailwag';
 
 const TutDiv = styled.div`
 background-color:#D6EEFF;
+height: 1150px;
 `
 const ButtonDiv = styled.div`
 margin-bottom: 20px;
@@ -16,6 +18,12 @@ margin-bottom: 20px;
 const PText = styled.div`
 padding: 10px;
 
+`
+
+const DogTutCont = styled.div`
+display:flex;
+position:relative;
+padding:50px;
 `
 
 export default function tutorial(){
@@ -83,9 +91,9 @@ export default function tutorial(){
       <MainButton
       labeltxt='Next'
       bg='#F8D2CF'
-      color='#EBB2AD'
+      color='#FFFFFF'
       border='5px solid #EBB2AD'
-      ts = '2px white'
+      ts = '0px'
       hbg = '#EBB2AD'
       hb='none'
 
@@ -96,6 +104,9 @@ export default function tutorial(){
       />
     </ButtonDiv>
 
+   
+      <TailWag />
+   
     
   </TutDiv>
 }

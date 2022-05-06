@@ -13,7 +13,7 @@ export const rs = {
         {
             img:'/sy2.jpg',
             name:'Caca, 2',
-            desc:'Caca was rescued from Rona. She was kept in a locker in their break room. She still has to be potty trained and she is looking for a spacious home. ',
+            desc:'Caca was rescued from the Rona break room. She still has to be potty trained.',
         }
         ]
     },
@@ -64,8 +64,8 @@ export const rs = {
             time: '1hr/day',
             adoptees: [{
                 img:'/my1.jpg',
-                name:'Cali, 7months',
-                desc:'Cali is a trooper. Cali was rescued from a breeding facility where she gave birth to 28 litters.',
+                name:'Cali, 1',
+                desc:'Cali is a trooper. Cali was rescued from a breeding facility.',
             },
             {
                 img:'/my2.jpg',
@@ -84,7 +84,7 @@ export const rs = {
             adoptees: [{
                 img:'/ma1.jpg',
                 name:'Mama, 9',
-                desc:'Mama was found after she abandoned her 8 pups on the side of the highway located near the GrandVilla Casino.',
+                desc:'Mama was found after she abandoned her 8 pups on the side of the highway near the Grand Villa Casino.',
             },
             {
                 img:'/ma2.jpg',
@@ -103,7 +103,7 @@ export const rs = {
             adoptees: [{
                 img:'/ms1.jpg',
                 name:'Mike, 10',
-                desc:'Mike was found abandoned by a famous millionaire. He was used for laundering money. ',
+                desc:'Mike was found abandoned by a millionaire and was used for laundering money. ',
             },
             {
                 img:'/ms2.jpg',
@@ -122,12 +122,12 @@ export const rs = {
             adoptees: [{
                 img:'/ly1.jpg',
                 name:'Mahmoud, 1',
-                desc:'Mahmoud is very creative and intelligent. He has taught himself how to make stop motion animations.',
+                desc:'Mahmoud is very creative and has taught himself how to make stop motion animations.',
             },
             {
                 img:'/ly2.jpg',
                 name:'Barb, 2',
-                desc:'I came to win, to fight. To conquer, to thrive. I came to win, to survive. To prosper, to rise. To fly',
+                desc:'I came to win, to survive. To prosper, to rise. To fly',
             }
             ]
         },
@@ -146,7 +146,7 @@ export const rs = {
                 {
                     img:'/la2.jpg',
                     name:'Jabba, 5',
-                    desc:'Jabba is a good boy. He always follows his favourite volunteers around and his bark sounds like a roach.',
+                    desc:'Jabba is a good boy. His bark sounds like a roach.',
                 }
                 ]
             },

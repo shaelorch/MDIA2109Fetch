@@ -8,13 +8,13 @@ justify-content: space-between;
 margin-top: 20px;
 `
 const Left = styled.div`
-
-bottom: 460px;
+position: relative;
+bottom: 60px;
 left: 50px;
 `
 const Right = styled.div`
-
-bottom: 460px;
+position: relative;
+bottom: 60px;
 right: 50px;
 `
 
