@@ -94,7 +94,7 @@ export default function Questions(){
     Number(qnum) >= qs.length -1 && 
     <NextandBack onClickNext={
       ()=>r.push({
-        pathname:"/results"
+        pathname:"/results",
       })
     }
 
