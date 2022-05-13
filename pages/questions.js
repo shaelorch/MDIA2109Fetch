@@ -7,6 +7,7 @@ import Progress from '../comps/Progressbar';
 import NextandBack from '../comps/NextandBack';
 import { qs, changeResults } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 
 
@@ -27,11 +28,30 @@ margin-top: 220px;
 
 
 export default function Questions(){
+  const [sel, setSel] = useState(null);
   const r = useRouter()
   var {qnum} = r.query;
   if(qnum === undefined){
     qnum = 0;
   }
+
+  useEffect(()=>{
+    setSel(-1)
+  }, [qnum])
+
+  function handleQButton(o, i){
+    changeResults(
+      o.young,
+      o.adult,
+      o.senior,
+      o.small,
+      o.medium,
+      o.large
+    )
+
+    setSel(i)
+  }
+
   return <BackgroundDiv>
     <TopBar />
 
@@ -58,16 +78,9 @@ export default function Questions(){
           <QButton
         labeltxt={o.txt}
 
-    
+        clicked = {sel == i}    
       
-        onClick={()=> changeResults(
-          o.young,
-          o.adult,
-          o.senior,
-          o.small,
-          o.medium,
-          o.large
-          )}
+        onClick={()=> handleQButton(o, i)}
         /></ButtonCont> 
         )
       }
