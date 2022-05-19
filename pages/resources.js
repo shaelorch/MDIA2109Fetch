@@ -7,7 +7,7 @@ import MainButton from '../comps/mainButton';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
-height: 800px;
+height: 1000px;
 `
 const ButtonDiv = styled.div`
 top: 40px;
