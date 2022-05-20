@@ -9,7 +9,7 @@ const GalDiv = styled.div`
 background-color:#f0f4e4;
 `
 
-const Gallery = styled.div`
+const Gallerypic = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 grid-gap: 20px;
@@ -27,7 +27,7 @@ export default function Gall(){
         size='50px'
         />
 
-        <Gallery>
+        <Gallerypic>
         <MatchImage
         image='/dogfam1.jpg'
         svg=''
@@ -65,7 +65,7 @@ export default function Gall(){
         labeltxt='Summer and Steve with their new dog Buddy! Summer and Steve live in a a townhouse and have the time and money available for a small - medium and young dog. They have loved having Buddy apart of their family!'
         />
 
-        </Gallery>
+        </Gallerypic>
 
     </GalDiv>
 
