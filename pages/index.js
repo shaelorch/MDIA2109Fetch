@@ -6,7 +6,6 @@ import Paragraph from "../comps/Paragraph";
 import MainButton from "../comps/mainButton";
 import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
-import { Main } from "next/document";
 import {useState} from 'react';
 import Menu from "../comps/Menu";
 import TopBar from "../comps/TopBar";
