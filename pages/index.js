@@ -4,10 +4,8 @@ import Header from "../comps/Header";
 import MainLogo from "../comps/MainLogo";
 import Paragraph from "../comps/Paragraph";
 import MainButton from "../comps/mainButton";
-import Hamburger from "../comps/Hamburger";
 import {useRouter} from 'next/router';
 import {useState} from 'react';
-import Menu from "../comps/Menu";
 import TopBar from "../comps/TopBar";
 
 const HomeDiv = styled.div `
@@ -60,7 +58,6 @@ export default function Home(){
             labeltxt="Tutorial"
             bg="#EBB2AD"
             border="#ffffff"
-            color="#EBB2AD"
             ts="none"
             color='white'
             hbg="#EBB2AD"
