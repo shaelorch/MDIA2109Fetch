@@ -7,7 +7,7 @@ import MainButton from '../comps/mainButton';
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
-height: 800px;
+height: 1000px;
 `
 const ButtonDiv = styled.div`
 top: 40px;
@@ -29,7 +29,9 @@ export default function resources(){
         <ButtonDiv>
 
         <MainButton 
-        labeltxt="Coquitlam SPCA"
+        labeltxt=""
+        buttontext='Tri-Cities SPCA'
+        link='https://spca.bc.ca/locations/tri-cities/'
         bg="#EBB2AD"
         color="#fff"
         ts="0px"
@@ -38,7 +40,20 @@ export default function resources(){
         />
 
         <MainButton 
-        labeltxt="Richmond SPCA"
+        labeltxt=''
+        buttontext="Richmond SPCA"
+        bg="#EBB2AD"
+        color="#fff"
+        ts="0px"
+        border="0px"
+        hbg='#EBB2AD'
+        link='https://richmondspca.org/'
+        />
+
+        <MainButton 
+        labeltxt=""
+        buttontext='Vancouver SPCA'
+        link='https://spca.bc.ca/locations/vancouver/'
         bg="#EBB2AD"
         color="#fff"
         ts="0px"
@@ -47,16 +62,9 @@ export default function resources(){
         />
 
         <MainButton 
-        labeltxt="Burnaby SPCA"
-        bg="#EBB2AD"
-        color="#fff"
-        ts="0px"
-        border="0px"
-        hbg='#EBB2AD'
-        />
-
-        <MainButton 
-        labeltxt="Vancouver SPCA"
+        labeltxt=""
+        buttontext='Surrey SPCA'
+        link='https://spca.bc.ca/locations/surrey/'
         bg="#EBB2AD"
         color="#fff"
         ts="0px"

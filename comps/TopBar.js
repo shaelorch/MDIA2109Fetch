@@ -6,6 +6,7 @@ import {useState} from 'react';
 import {useRouter} from 'next/router';
 
 
+
 const BarCont = styled.div `
 display:flex;
 justify-content: space-between;
@@ -14,6 +15,9 @@ justify-content: space-between;
 const MenuDiv = styled.div`
     display: ${props=>props.d};
     
+`
+const LogoDiv = styled.div`
+
 `
 
 
@@ -25,7 +29,11 @@ export default function TopBar(){
     const r = useRouter();
 
     return <><BarCont>
-        <Logo></Logo>
+
+        <LogoDiv>
+            <Logo />
+        </LogoDiv>
+        
 
         <Hamburger onClick={
             ()=>setDisp("block")

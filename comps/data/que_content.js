@@ -1,5 +1,7 @@
+
 export const qs = [
     {
+        image: '/1stpage.svg',
         title: "1. Occupation",
         question: "What type of job do you have?",
         choices: [{
@@ -25,6 +27,7 @@ export const qs = [
     },
 
     {
+        image: '/2ndpage.svg',
         title:"2. Costs",
         question:"How much are you willing to spend monthly on your potential dog?",
         choices: [{
@@ -57,6 +60,7 @@ export const qs = [
         ]
     },
     {
+        image: '/3rdpage.svg',
         title:"3. Housing",
         question: "Pick which suits your living situation.",
         choices: [{
@@ -80,6 +84,7 @@ export const qs = [
         ]
     },
     {
+        image: '/4thpage.svg',
         title:"4. Daily Activity",
         question:"Are you willing to spend 45mins or more walking your dog?",
         choices: [{

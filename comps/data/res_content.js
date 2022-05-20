@@ -6,16 +6,14 @@ export const rs = {
         cost: '$500/month',
         time: '40mins/day',
         adoptees: [{
-            img:0,
-            name:0,
-            age:0,
-            desc:0,
+            img:'/sy1.jpg',
+            name:'Bill, 1',
+            desc:'Billy is a silly little doggy. Hes looking for a happy home!',
         },
         {
-            img:0,
-            name:0,
-            age:0,
-            desc:0,
+            img:'/sy2.jpg',
+            name:'Caca, 2',
+            desc:'Caca was rescued from the Rona break room. She still has to be potty trained.',
         }
         ]
     },
@@ -27,16 +25,14 @@ export const rs = {
         cost: '$200/month',
         time: '40mins/day',
         adoptees: [{
-            img:0,
-            name:0,
-            age:0,
-            desc:0,
+            img:'/sa1.jpg',
+            name:'Daemon, 3',
+            desc:'Daemon is a quirky boy. He loves pandas and back rubs.',
         },
         {
-            img:0,
-            name:0,
-            age:0,
-            desc:0,
+            img:'/sa2.jpg',
+            name:'Henry, 6',
+            desc:'Henry is a wolf at heart. Henry is not trained and he howls a lot!',
         }
         ]
     },
@@ -48,16 +44,14 @@ export const rs = {
             cost: '$800/month',
             time: '30mins/day',
             adoptees: [{
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ss1.jpg',
+                name:'Cuca, 12',
+                desc:'Cuca is a loving and gentle girl. She was rescued from a dog fighting ring. She has since turned feral.',
             },
             {
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ss2.jpg',
+                name:'Desi, 14',
+                desc:'Desi is your long-lost bestie. He is looking for a good time not a long time. ',
             }
             ]
         },
@@ -69,16 +63,14 @@ export const rs = {
             cost: '$400/month',
             time: '1hr/day',
             adoptees: [{
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/my1.jpg',
+                name:'Cali, 1',
+                desc:'Cali is a trooper. Cali was rescued from a breeding facility.',
             },
             {
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/my2.jpg',
+                name:'Jeb, 2',
+                desc:'Jeb is a ladies man and his favourite stuffy, RiRi, is his current girlfriend.',
             }
             ]
         },
@@ -90,16 +82,14 @@ export const rs = {
             cost: '$150/month',
             time: '40mins/day',
             adoptees: [{
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ma1.jpg',
+                name:'Mama, 9',
+                desc:'Mama was found after she abandoned her 8 pups on the side of the highway near the Grand Villa Casino.',
             },
             {
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ma2.jpg',
+                name:'Sllama, 5',
+                desc:'Viva la Sllama!',
             }
             ]
         },
@@ -111,17 +101,15 @@ export const rs = {
             cost: '$650/month',
             time: '30mins/day',
             adoptees: [{
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ms1.jpg',
+                name:'Mike, 10',
+                desc:'Mike was found abandoned by a millionaire and was used for laundering money. ',
             },
             {
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
-            }
+                img:'/ms2.jpg',
+                name:'Pierre, 12',
+                desc:'Pierre is a downright dog in the dog house.',
+            } 
             ]
         },
 
@@ -132,16 +120,14 @@ export const rs = {
             cost: '$500/month',
             time: '1hr/day',
             adoptees: [{
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ly1.jpg',
+                name:'Mahmoud, 1',
+                desc:'Mahmoud is very creative and has taught himself how to make stop motion animations.',
             },
             {
-                img:0,
-                name:0,
-                age:0,
-                desc:0,
+                img:'/ly2.jpg',
+                name:'Barb, 2',
+                desc:'I came to win, to survive. To prosper, to rise. To fly',
             }
             ]
         },
@@ -153,16 +139,14 @@ export const rs = {
                 cost: '$200/month',
                 time: '40mins/day',
                 adoptees: [{
-                    img:0,
-                    name:0,
-                    age:0,
-                    desc:0,
+                    img:'/la1.jpg',
+                    name:'Phyllis, 4',
+                    desc:'Phyllis is crazy and wild and free. She doesnt follow the rules, she makes them.',
                 },
                 {
-                    img:0,
-                    name:0,
-                    age:0,
-                    desc:0,
+                    img:'/la2.jpg',
+                    name:'Jabba, 5',
+                    desc:'Jabba is a good boy. His bark sounds like a roach.',
                 }
                 ]
             },
@@ -174,16 +158,14 @@ export const rs = {
                 cost: '$800/month',
                 time: '30mins/day',
                 adoptees: [{
-                    img:0,
-                    name:0,
-                    age:0,
-                    desc:0,
+                    img:'/ls1.jpg',
+                    name:'Alli, 10',
+                    desc:'Alli is a barb. Her favourite song is Pills and Potions.',
                 },
                 {
-                    img:0,
-                    name:0,
-                    age:0,
-                    desc:0,
+                    img:'/ls2.jpg',
+                    name:'Amy, 14',
+                    desc:'Amy loves to bark, she never stops! Amy is losing her vision and hearing.',
                 }
                 ]
             },

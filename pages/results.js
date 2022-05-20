@@ -10,10 +10,23 @@ import MainButton from '../comps/mainButton.js';
 import {useRouter} from 'next/router';
 import {getResults} from '../comps/data/que_content';
 import {rs} from '../comps/data/res_content';
+import { fadeIn, wiggleIn } from '../comps/data/animation.js';
+
 
 const ResDiv = styled.div`
 background-color:#f0f4e4;
+animation:${fadeIn} 3s;
+height: 1500px;
 `
+
+const AnimeDiv = styled.div`
+animation:${wiggleIn} 1s;
+animation-iteration-count: 10;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+
 
 export default function results(){
     const r = useRouter()
@@ -111,23 +124,22 @@ export default function results(){
         colour='#97D4FF'
         />
 
-        <AdopteeCard
-        headertxt='Daisy, 5'
-        text='Daisy was found in an abandoned home with a litter of pups next to her.'
-        />
-
-        <AdopteeCard
-        headertxt='Rocky, 7'
-        text='Rocky is a gentle giant who was found at a breeding mill in Vancouver.'
-        image='https://placedog.net/400'
-        />
+        <AnimeDiv> 
+        {
+            content.adoptees.map((o,i)=><AdopteeCard
+                image={o.img}
+                headertxt={o.name}
+                text={o.desc}
+            />)
+        }
+        </AnimeDiv>
 
         <MainButton 
-        ts='2px white'
+        ts='0px'
         border='7px solid #EBB2AD'
-        color='#EBB2AD'
+        color='#FFFFFF'
         bg='#F8D2CF'
-        labeltxt='Find a Pup!'
+        labeltxt='Find a Shelter'
         hb='none'
         hbg='#EBB2AD'
         hc='none'
@@ -138,9 +150,9 @@ export default function results(){
         />
 
         <MainButton 
-        ts='2px white'
+        ts='0px'
         border='7px solid #EBB2AD'
-        color='#EBB2AD'
+        color='#FFFFFF'
         bg='#F8D2CF'
         labeltxt='Success Stories!'
         hb='none'

@@ -17,7 +17,7 @@ export default function Logo ({
 
     return (
     <LogoCont>
-        <img onClick={()=>r.push("/Home")} height={imgsize} src={imgtype} />
+        <img onClick={()=>r.push("/")} height={imgsize} src={imgtype} />
     </LogoCont>
     )
 }

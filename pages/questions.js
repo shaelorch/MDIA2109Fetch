@@ -1,18 +1,21 @@
 import styled from 'styled-components';
 import TopBar from '../comps/TopBar';
 import Header from '../comps/Header';
-import MainButton from '../comps/MainButton';
-import QueCircle from '../comps/QueCircle';
+import QButton from '../comps/QuestionButton';
 import Paragraph from '../comps/Paragraph';
 import Progress from '../comps/Progressbar';
 import NextandBack from '../comps/NextandBack';
 import { qs, changeResults } from '../comps/data/que_content';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+
 
 
 
 const BackgroundDiv = styled.div `
-background-image: linear-gradient(#D6EEFF, #D6EEC9)
+background-image:url("/background.svg");
+height: 900px;
+width: 100%;
 `
 
 const ButtonCont = styled.div `
@@ -23,16 +26,42 @@ position: relative;
 margin-top: 220px;
 `
 
+
 export default function Questions(){
+  const [sel, setSel] = useState(null);
   const r = useRouter()
   var {qnum} = r.query;
   if(qnum === undefined){
     qnum = 0;
   }
+
+  useEffect(()=>{
+    setSel(-1)
+  }, [qnum])
+
+  function handleQButton(o, i){
+    changeResults(
+      o.young,
+      o.adult,
+      o.senior,
+      o.small,
+      o.medium,
+      o.large
+    )
+
+    setSel(i)
+  }
+
   return <BackgroundDiv>
     <TopBar />
-    <Progress />  
-      <Header
+
+   
+    <Progress
+      imgtype={qs[qnum].image}
+      />  
+  
+
+    <Header
        headertext={qs[qnum].title}
        size='50px'/>
 
@@ -46,26 +75,12 @@ export default function Questions(){
 
         qs[qnum].choices.map((o, i )=> 
         <ButtonCont>
-          <MainButton
+          <QButton
         labeltxt={o.txt}
-        bg='#D6EEC9'
-        color='#7EA172'
-        border='5px solid #7EA172'
-        ts = 'none'
-        hb='none'
-        hc='white'
-        hbg='#7EA172'
 
-    
+        clicked = {sel == i}    
       
-        onClick={()=> changeResults(
-          o.young,
-          o.adult,
-          o.senior,
-          o.small,
-          o.medium,
-          o.large
-          )}
+        onClick={()=> handleQButton(o, i)}
         /></ButtonCont> 
         )
       }
@@ -98,7 +113,7 @@ export default function Questions(){
     Number(qnum) >= qs.length -1 && 
     <NextandBack onClickNext={
       ()=>r.push({
-        pathname:"/results"
+        pathname:"/results",
       })
     }
 

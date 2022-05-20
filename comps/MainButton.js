@@ -28,6 +28,11 @@ box-shadow: 0px 2px 3px #888888;
 
 }
 `
+const ATag = styled.a`
+color: ${props=>props.linkcol};
+font-family: 'Passion One', cursive;
+font-size: 30px;
+`
 
 
 
@@ -42,13 +47,13 @@ export default function MainButton({
     hb='5px solid #F8D2CF',
     hs ='none',
     onClick=()=>{},
-
-
+    link="",
+    lc="#FFF",
+    buttontext='',
    
 }){
     return <ButtonCont>
         <FormButton onClick={onClick}
-
         background={bg} 
         color={color} 
         border={border}
@@ -57,7 +62,10 @@ export default function MainButton({
         hovercolor={hc}
         hoverborder={hb}
         hoverstroke={hs}
-        >{labeltxt}</FormButton>
+        >{labeltxt}<ATag linkcol={lc} href={link}>
+            {buttontext}
+        </ATag>
+        </FormButton>
     </ButtonCont>
 }
 
