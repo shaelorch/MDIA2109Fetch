@@ -1,5 +1,3 @@
-const { ESLint } = require('eslint')
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,5 +6,4 @@ const nextConfig = {
   }
 }
 
-module.exports = next
-
+module.exports = nextConfig
