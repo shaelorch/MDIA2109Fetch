@@ -43,7 +43,7 @@ const ButtonDiv = styled.div`
 margin-bottom: 20px;
 `
 
-export default function info(){
+export default function Info(){
     const r = useRouter()
 
     return <InfoDiv>

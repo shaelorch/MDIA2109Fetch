@@ -26,7 +26,7 @@ position:relative;
 padding:50px;
 `
 
-export default function tutorial(){
+export default function Tutorial(){
   const r = useRouter()
   return <TutDiv>
     <TopBar/>

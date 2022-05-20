@@ -28,7 +28,7 @@ align-items: center;
 `
 
 
-export default function results(){
+export default function Results(){
     const r = useRouter()
     const results = getResults();
 

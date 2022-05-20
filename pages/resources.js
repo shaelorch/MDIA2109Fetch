@@ -13,7 +13,7 @@ const ButtonDiv = styled.div`
 top: 40px;
 `
 
-export default function resources(){
+export default function Resources(){
     const r = useRouter()
 
     return <ResDiv>
