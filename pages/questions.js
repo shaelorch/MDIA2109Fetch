@@ -1,5 +1,3 @@
-/* esLint-disable */
-
 import styled from 'styled-components';
 import TopBar from '../comps/TopBar';
 import Header from '../comps/Header';
@@ -75,7 +73,7 @@ export default function Questions(){
 
 {
 
-        qs[qnum].choices.map((o, i )=>
+        qs[qnum].choices.map((o, i )=> 
         <ButtonCont>
           <QButton
         labeltxt={o.txt}

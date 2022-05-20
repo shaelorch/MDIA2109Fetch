@@ -13,7 +13,6 @@ import {rs} from '../comps/data/res_content';
 import { fadeIn, wiggleIn } from '../comps/data/animation.js';
 
 
-
 const ResDiv = styled.div`
 background-color:#f0f4e4;
 animation:${fadeIn} 3s;
@@ -128,7 +127,6 @@ export default function Results(){
         <AnimeDiv> 
         {
             content.adoptees.map((o,i)=><AdopteeCard
-                key={o.key}
                 image={o.img}
                 headertxt={o.name}
                 text={o.desc}
