@@ -13,6 +13,7 @@ import {rs} from '../comps/data/res_content';
 import { fadeIn, wiggleIn } from '../comps/data/animation.js';
 
 
+
 const ResDiv = styled.div`
 background-color:#f0f4e4;
 animation:${fadeIn} 3s;

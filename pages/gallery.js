@@ -18,7 +18,7 @@ padding: 50px;
 
 `
 
-export default function Gallery(){
+export default function Gall(){
     return <GalDiv>
         <TopBar/>
 
