@@ -5,9 +5,6 @@ const nextConfig = {
   reactStrictMode: true,
   compiler:{
     styledComponents:true
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   }
 }
 
