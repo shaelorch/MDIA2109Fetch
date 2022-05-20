@@ -74,7 +74,9 @@ export default function Questions(){
 {
 
         qs[qnum].choices.map((o, i )=> 
-        <ButtonCont>
+        <ButtonCont
+        key={o.key}
+        >
           <QButton
         labeltxt={o.txt}
 
