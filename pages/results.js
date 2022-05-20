@@ -128,6 +128,7 @@ export default function Results(){
         <AnimeDiv> 
         {
             content.adoptees.map((o,i)=><AdopteeCard
+                key={o.key}
                 image={o.img}
                 headertxt={o.name}
                 text={o.desc}
